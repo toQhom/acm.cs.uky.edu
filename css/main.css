@@ -532,6 +532,9 @@ h6 {
 		margin-left:auto;
 		margin-right:auto;
 	}
+	.placeholder {
+		display:none;
+	}
 	#teamContainer {
 		width:250px;
 	}
