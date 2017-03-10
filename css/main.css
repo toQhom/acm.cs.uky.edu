@@ -104,7 +104,9 @@ h3 {
 	color:#fff;
 }
 
-
+#mobileMailingHeader{
+ 	display:none;		
+}
 
 #main {
 	width:100%;
@@ -547,7 +549,9 @@ h6 {
 	.container{
 		overflow:visible;
 	}
-
+    #mobileMailingHeader{
+ 		display:block;	
+	}
 	#firstP{
 	}
 	#mobilepage{
