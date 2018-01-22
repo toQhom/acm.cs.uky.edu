@@ -26,14 +26,14 @@ function sweepUp() {
 	  if (!firstTime){
 	  	  $('#headerCycle').removeClass('cycleAnimationDown');
 	  }
-		$('#container').css('height', '380px');
+		$('#container').css('height', '580px');
 	  $('#headerCycle').addClass('cycleAnimation');
 	  $('#firstDiv').addClass('pt-page-moveToTop');
 	  secondPageVisible = !secondPageVisible;
 }
 
 function sweepDown() {
-	$('#container').css('height', '580px');
+	$('#container').css('height', '380px');
 	$('#headerCycle').removeClass('cycleAnimation');
 	$('#headerCycle').addClass('cycleAnimationDown');
 	$('#firstDiv').addClass('pt-page-moveToBottom');
