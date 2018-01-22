@@ -26,7 +26,7 @@ function sweepUp() {
 	  if (!firstTime){
 	  	  $('#headerCycle').removeClass('cycleAnimationDown');
 	  }
-		$('#container').css('height', '580px');
+		$('#container').css('height', '650px');
 	  $('#headerCycle').addClass('cycleAnimation');
 	  $('#firstDiv').addClass('pt-page-moveToTop');
 	  secondPageVisible = !secondPageVisible;
