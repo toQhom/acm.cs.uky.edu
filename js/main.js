@@ -26,12 +26,14 @@ function sweepUp() {
 	  if (!firstTime){
 	  	  $('#headerCycle').removeClass('cycleAnimationDown');
 	  }
+		$('#container').css('height', '380px');
 	  $('#headerCycle').addClass('cycleAnimation');
 	  $('#firstDiv').addClass('pt-page-moveToTop');
 	  secondPageVisible = !secondPageVisible;
 }
 
 function sweepDown() {
+	$('#container').css('height', '580px');
 	$('#headerCycle').removeClass('cycleAnimation');
 	$('#headerCycle').addClass('cycleAnimationDown');
 	$('#firstDiv').addClass('pt-page-moveToBottom');
@@ -43,7 +45,7 @@ function sweepDown() {
 }
 
 function resizeContainer() {
-if (380 + $("#container").height() > window.innerHeight){
+if (255 + $("#container").height() > window.innerHeight){
 	$('#mobilepage').css('height', $("#container").height()-window.innerHeight+250);
 	if (secondPageVisible) {
 		sweepDown();
