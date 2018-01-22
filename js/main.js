@@ -43,7 +43,7 @@ function sweepDown() {
 }
 
 function resizeContainer() {
-if (255 + $("#container").height() > window.innerHeight){
+if (380 + $("#container").height() > window.innerHeight){
 	$('#mobilepage').css('height', $("#container").height()-window.innerHeight+250);
 	if (secondPageVisible) {
 		sweepDown();
