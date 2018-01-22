@@ -36,6 +36,7 @@ function sweepDown() {
 	$('#headerCycle').addClass('cycleAnimationDown');
 	$('#firstDiv').addClass('pt-page-moveToBottom');
 	$('#firstDiv').removeClass('pt-page-moveToTop');
+
 	firstTime = false;
 	secondPageVisible = !secondPageVisible;
 
@@ -43,13 +44,13 @@ function sweepDown() {
 
 function resizeContainer() {
 if (255 + $("#container").height() > window.innerHeight){
-	$('#mobilepage').css('height', $("#container").height()-window.innerHeight+150);
+	$('#mobilepage').css('height', $("#container").height()-window.innerHeight+250);
 	if (secondPageVisible) {
-		sweepDown();	
+		sweepDown();
 	}
 }
 else {
-	
+
 $('#mobilepage').css('height', 0);
 	}
 }

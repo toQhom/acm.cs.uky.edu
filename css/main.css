@@ -283,12 +283,12 @@ footer{
 }
 
 @-webkit-keyframes moveToBottom {
-	from { margin-top:-325px;}
+	from { margin-top:-385px;}
 	to { margin-top:0;}
 }
 
 @keyframes moveToBottom {
-	from { margin-top:-325px;}
+	from { margin-top:-385px;}
 	to { margin-top:0; }
 }
 
@@ -512,7 +512,7 @@ h6 {
 
 @media (min-width: 751px) {
 	#container{
-		height:590px;
+		height:380px;
 	}
 
 }
