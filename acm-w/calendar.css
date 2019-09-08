@@ -1,0 +1,123 @@
+body {
+    font-family: Century Gothic;
+}
+
+header {
+    text-align: center;
+}
+
+#calendar {
+    width: 922px;
+}
+
+#calendar a {
+    color: #8e352e;
+    text-decoration: none
+}
+
+#calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#calendar li {
+    display: block;
+    float: left;
+    width:14.342%;
+    padding: 5px;
+    box-sizing:border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+    height: 40px;
+    background: #b8bdb2;
+}
+
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+}
+
+#calendar .days li {
+    height: 180px;
+    background: white;
+}
+
+
+#calendar .days li:hover {
+    background: #d3d3d3;
+}
+
+#calendar .other-month li {
+    height: 180px;
+    background: red;
+}
+
+#calendar .date {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 4px;
+    background: #333;
+    color: #fff;
+    width: 20px;
+    border-radius: 50%;
+    float: right;
+}
+
+#calendar .event {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #b8bdb2;
+    border: 1px dotted black;
+    color: #689ec7;
+    text-decoration: none;
+}
+
+#calendar .event-desc {
+    color: #666;
+    font-weight: normal;
+    margin: 3px 0 7px 0;
+    text-decoration: none;  
+}
+
+
+/* ============================
+                Mobile Responsiveness
+   ============================*/
+
+
+@media(max-width: 768px) {
+
+    #calendar .weekdays,  {
+        display: none;
+    }
+
+    #calendar li {
+        height: auto !important;
+        border: 1px solid #ededed;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+
+    #calendar .date {
+        float: none;
+    }
+}
