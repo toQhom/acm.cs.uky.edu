@@ -26,7 +26,7 @@
                     <ul class="nav navbar-nav">
                         <li id="Homeli" class="active"><a href="#Home">Home <span class="sr-only">(current)</span></a></li>
                         <li id="Aboutli" ><a href="#About">About</a></li>
-                        <li id="Applyli" ><a href="#Apply">Apply</a></li>
+                        <li id="Applyli" ><a href="#Apply">Sign-Up</a></li>
                         <li id="Sponsorli" ><a href="#Sponsor">Sponsor</a></li>
                     </ul>
                 </div>
@@ -76,7 +76,7 @@
                         <div class="text-box">
                             <h1> Eligibility and Travel </h1>
                             <p>In order to attend CatHacks, you must be a student at a post-secondary university. We accept high school students on a case by case basis. Even if you don't have much experience, you should still apply! <br> We're offering travel reimbursement to as many participants as possible. Let us know if you need some help, and we'll do our best to get you here.</p>
-                            <button class="main-btn" onclick="window.open('https://my.mlh.io/oauth/authorize?client_id=72ca7ae99e6ba64c3e0049f7d33e2aa3d5b56ff11504f752adbe672b2a66503f&redirect_uri=http%3A%2F%2Fcathacks.cs.uky.edu%2Fapply%2Fthankyou.html&response_type=token', '_self');"> Apply </button> <br>
+                            <button class="main-btn" onclick="window.open('https://my.mlh.io/oauth/authorize?client_id=72ca7ae99e6ba64c3e0049f7d33e2aa3d5b56ff11504f752adbe672b2a66503f&redirect_uri=http%3A%2F%2Fcathacks.cs.uky.edu%2Fapply%2Fthankyou.html&response_type=token', '_self');"> Sign-Up </button> <br>
                             <p style="font-size:14px; font-weight:400;">By applying, you agree to the <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.</p>
                         </div>
                     </div>
@@ -101,8 +101,13 @@
                         </div>
                     </div>
                     <div class="sp-container col-md-5 offset-md-2">
-                        <h3>Here's a look at our sponsors from CatHacks III</h3>
+                        <h3>Here's a look at our current sponsors!</h3>
                         <div class="sp-box">
+                            <a href="https://www.dynetics.com/" target="_blank"><img src="img/sponsor-logos/dynetics-logo.svg" alt="Dynetics Logo"></a>
+                            <a href="https://www.linode.com/" target="_blank"><img src="img/sponsor-logos/linode-logo.svg" alt="Linode Logo"></a>
+                            <a href="https://www.engr.uky.edu/" target="_blank"><img src="img/sponsor-logos/uky-engineering-logo.svg" alt="University of Kentucky College of Engineering Logo"></a>
+                            <a href="https://www.pathrise.com/" target="_blank"><img src="img/sponsor-logos/pathrise-logo.svg" alt="Pathrise Logo"></a>
+                            <a href="https://www.drinkphocus.com/" target="_blank"><img src="img/sponsor-logos/phocus-logo.svg" alt="Clear Cut Phocus Logo"></a>
                         </div>
                     </div>
                 </div>
@@ -120,6 +125,18 @@
             $("#About").backstretch("app/img/aboutbg.png");
             $("#Apply").backstretch("app/img/newapplybg.png");
             $("#Sponsor").backstretch("app/img/sponsorbg.png");
+        </script>
+        <script>
+
+            $(function() {
+                $("li").click(function() {
+                    // remove classes from all
+                    $("li").removeClass("active");
+                    // add class to the one we clicked
+                    $(this).addClass("active");
+                });
+            });
+
         </script>
         <!-- END Scripts -->
     </body>

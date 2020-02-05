@@ -215,7 +215,7 @@ button:focus {
 #Apply {
   /* Media Queries */ }
   #Apply .mentor-box {
-    min-height: 400px;
+    /*min-height: 400px;*/
     background-color: #22787B;
     /*right:0;
         position:absolute;
@@ -244,16 +244,24 @@ button:focus {
   #Sponsor .sp-box, #Sponsor-info .sp-box {
     min-width: 510px;
     min-height: 430px;
-    background-color: #1D2430;
-    padding: 50px 70px 70px 70px;
+    background-color: #fff;
+    /*padding: 50px 70px 70px 70px;*/
+    padding:5px 20px;
     line-height: 44px;
     font-weight: 200;
-    background-image: url("../img/sponsors.svg");
+    /*background-image: url("../img/sponsors.svg");*/
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto auto; }
+  .sp-box img {
+    max-height: 120px;
+    max-width:45%;
+    margin-top:10px;
+    margin-right:5px;
+    display:inline;
+  }
   #Sponsor .sp-container, #Sponsor-info .sp-container {
-    right: -14%;
+    /*right: -14%;*/
     text-align: center; }
   #Sponsor .text-box-parent, #Sponsor-info .text-box-parent {
     padding-left: 10%;
@@ -287,7 +295,7 @@ button:focus {
     margin-top: 45px;
     font-size: 31px; }
   h3 {
-    display: none; }
+    /*display: none;*/ }
   p {
     line-height: 2.5;
     font-size: 13px; }
@@ -299,9 +307,26 @@ button:focus {
   .sp-box {
     margin-top: 10px; } }
 
+@media (max-width:480px){
+  #Sponsor .sp-box, #Sponsor-info .sp-box {
+    padding:10px 0;
+    max-width:100%;
+    min-width:auto;
+    min-height:auto;
+    margin-bottom:40px;
+  }
+  .sp-box img {
+    max-height: 120px;
+    max-width:100%;
+    margin-top:10px;
+    margin-right:auto;
+    display:block;
+  }
+
+}
 @media (max-width: 991px) {
   .sp-container {
-    display: none; }
+    /*display: none;*/ margin-top:20px; }
   .footer {
     font-size: 9px; } }
 
