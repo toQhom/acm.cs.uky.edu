@@ -63,7 +63,7 @@ MyMlhDash.prototype.getTags = function(data){
         // Directly return the joined string
         return splitStr.join(' '); 
         }
-        var cur_school = titleCase(cur.school_name.toLowerCase());
+        var cur_school = titleCase(cur.school_name.toLowerCase().replace(/the\s/,""));
 
         for (var j=0;j<major_list.length;j++){
             var cur_major = major_list[j];
@@ -140,11 +140,21 @@ MyMlhDash.prototype.initRegistrantsChart = function(){
     var categories = {};
     for (i=0;i<this.data.length;i++){
         var updated_date = new Date(this.data[i].updated_at);
-        var datestring = updated_date.getFullYear()+""+updated_date.getMonth()+""+updated_date.getDate();
+        
+        var monthString = updated_date.getUTCMonth()+"";
+        var dayString = updated_date.getUTCDate()+"";
+        if ((updated_date.getUTCMonth()+1) < 10){
+            monthString = "0" + (updated_date.getUTCMonth()+1);
+        }
+        if ((updated_date.getUTCDate()+1) < 10){
+            dayString = "0" + (updated_date.getUTCDate());
+        }
+        
+        var datestring = updated_date.getUTCFullYear()+""+monthString+""+dayString;
         if (!categories[datestring]){
             categories[datestring] = {};
             categories[datestring].val = 0;
-            categories[datestring].name = updated_date.getFullYear()+"-"+updated_date.getMonth()+"-"+updated_date.getDate();
+            categories[datestring].name = updated_date.getUTCFullYear()+"-"+monthString+"-"+dayString;
         }
 
         categories[datestring].val++;
@@ -159,6 +169,10 @@ MyMlhDash.prototype.initRegistrantsChart = function(){
         names.push(categories[key].name);
         vals.push(categories[key].val);
     }
+
+    console.log(vals);
+
+    names.sort();
 
     $("#chart-container").highcharts({
         chart:{
