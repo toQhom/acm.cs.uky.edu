@@ -35,8 +35,11 @@
 
 
 
-
-
+        <!-- ALERT INFO BELOW -->
+        <div id="alert">
+            <div class="alertIcon"><img src="img/alert.png"></div>
+            <div class="alertInfo">As of 3/11/20, CatHacks will still take place at its regularly scheduled time and place and will <strong>NOT</strong> be cancelled. If the University of Kentucky decides that risk due to COVID-19 is great enough, we will take the appropriate action and postpone the event. Contact <a href="mailto:nick.santini@uky.edu?subject=CatHacks Questions and Concerns">nick.santini@uky.edu</a> with any questions or concerns.</div>
+        </div>
 
         <section id="Home" class="vertical-center">
             <div class="container">
@@ -56,7 +59,7 @@
                     <h1>Episode VI: Return of the Hacker!</h1>
                     <p>In April 2015, CatHacks was the first national college hackathon in the state of Kentucky. This year, we're back for round six. <br>
 
-                    On April 4rd, 2020, hackers will travel from colleges across the nation to the University of Kentucky in Lexington.
+                    On April 4th, 2020, hackers will travel from colleges across the nation to the University of Kentucky in Lexington.
                     You'll have 24 hours to explore new technologies, meet talented students, and network with innovative tech companies. The food is on us, and so is the swag; CatHacks is completely free!</p>
                     <!--<p>Check-in starts at 10AM on March 30th. View the full schedule below.</p>-->
                     <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/schedule.pdf', '_self');"> Schedule </button>
@@ -118,7 +121,35 @@
             </div>
             <div class="footer"> &copy; CatHacks 2020. CatHacks is a <a href="http://acm.cs.uky.edu">UK ACM</a>  and <a href="http://acm-w.cs.uky.edu">UK ACM-W</a> event. </div>
         </section>
-
+        <style>
+            #alert {
+                position: absolute;
+                margin-top: 50px;
+                background: #fff;
+                color: #000;
+                z-index: 1;
+                border-top: 2px solid #000;
+                border-bottom: 2px solid #000;
+            }
+            #alert a {
+                color:#06f;
+            }
+            #alert img {
+                height: 60px;
+            }
+            .alertIcon {
+                display: inline-block;
+                border-right: 2px solid #000;
+                width: 63px;
+                float: left;
+            }
+            .alertInfo {
+                display: inline;
+                width: calc(100% - 229px);
+                float: left;
+                padding-left: 10px;
+            }
+        </style>
         <!-- Scripts -->
         <script src="app/js/external/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="app/js/external/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
