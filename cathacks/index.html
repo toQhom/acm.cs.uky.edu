@@ -11,7 +11,7 @@
     </head>
 	<body>
 		<!-- MLH Honor Badge  and Code of Conduct-->
-		<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+		<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:1031" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
 		<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -33,23 +33,15 @@
             </div>
         </nav>
 
-
-
-        <!-- ALERT INFO BELOW -->
-        <div id="alert">
-            <div class="alertIcon"><img src="img/alert.png"></div>
-            <div class="alertInfo">As of 3/11/20, CatHacks will still take place at its regularly scheduled time and place and will <strong>NOT</strong> be cancelled. If the University of Kentucky decides that risk due to COVID-19 is great enough, we will take the appropriate action and postpone the event. Contact <a href="mailto:nick.santini@uky.edu?subject=CatHacks Questions and Concerns">nick.santini@uky.edu</a> with any questions or concerns.</div>
-        </div>
-
         <section id="Home" class="vertical-center">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <img class="logo" src="app/img/logo.svg" />
-                        <h2 style="text-align:center;"> April 4th-5th | Lexington, KY </h2>
+                        <h2 style="text-align:center;"> Fall 2020 | Lexington, KY </h2>
                     </div>
-                    <!-- <div class="col-md-6 home-btns"> <button href="https://briancarlson.typeform.com/to/EXiUyx" class="main-btn"> Apply </button>  <button href="#Sponsor" class="main-btn"> Sponsor </button> </div> -->
                 </div>
+                    <!-- <div class="col-md-6 home-btns"> <button href="https://briancarlson.typeform.com/to/EXiUyx" class="main-btn"> Apply </button>  <button href="#Sponsor" class="main-btn"> Sponsor </button> </div> -->
             </div>
         </section>
         <section id="About" class="vertical-center">
@@ -122,32 +114,19 @@
             <div class="footer"> &copy; CatHacks 2020. CatHacks is a <a href="http://acm.cs.uky.edu">UK ACM</a>  and <a href="http://acm-w.cs.uky.edu">UK ACM-W</a> event. </div>
         </section>
         <style>
-            #alert {
-                position: absolute;
-                margin-top: 50px;
-                background: #fff;
+            #alertModal {
+                margin-top:100px;
                 color: #000;
-                z-index: 1;
-                border-top: 2px solid #000;
-                border-bottom: 2px solid #000;
             }
-            #alert a {
+            #alertModal p{
+                font-size: 20px;
+                line-height: 1.5;
+            }
+            #alertModal img {
+                vertical-align: text-bottom;
+            }
+            #alertModal a{
                 color:#06f;
-            }
-            #alert img {
-                height: 60px;
-            }
-            .alertIcon {
-                display: inline-block;
-                border-right: 2px solid #000;
-                width: 63px;
-                float: left;
-            }
-            .alertInfo {
-                display: inline;
-                width: calc(100% - 229px);
-                float: left;
-                padding-left: 10px;
             }
         </style>
         <!-- Scripts -->
@@ -162,7 +141,12 @@
             $("#Sponsor").backstretch("app/img/sponsorbg.png");
         </script>
         <script>
+            //Alert Modal
+            $(function(){        
+                $("#alertModal").modal("show");
+            }); 
 
+            //Nav element highlight
             $(function() {
                 $("li").click(function() {
                     // remove classes from all
@@ -174,5 +158,26 @@
 
         </script>
         <!-- END Scripts -->
+
+        <!-- Start Alert Modal -->
+        <div id="alertModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <img src="img/alert.png" style="height:25px;display:inline;">
+                    <h4 class="modal-title" style="display:inline;">Important Message!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Due to the risk associated with COVID-19 coronavirus, for the health and safety of our participants, <strong>CatHacks VI is postponed until Fall 2020.</strong></p>
+                    <p>Contact <a href="mailto:nick.santini@uky.edu?subject=CatHacks Questions and Concerns">nick.santini@uky.edu</a> with any questions or concerns.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        <!-- End Alert Modal -->
     </body>
 </html>
