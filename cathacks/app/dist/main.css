@@ -16,13 +16,13 @@ html, body {
   display: block; }
 
 .navbar-nav > li {
-  margin-left: 93px; }
+  margin-left: 50px; }
 
 .navbar-nav > .active {
   padding-top: 8px; }
 
 .navbar-nav > :first-child {
-  margin-left: 96px; }
+  margin-left: 25px; }
 
 .navbar-nav > li > a {
   color: #525252;
@@ -214,6 +214,20 @@ button:focus {
 
 #Apply {
   /* Media Queries */ }
+  #Apply .iframe-container {
+    overflow: hidden;
+    padding-top: 125%;
+    position: relative;
+  }
+  
+  #Apply .iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
   #Apply .mentor-box {
     /*min-height: 400px;*/
     background-color: #22787B;
@@ -238,6 +252,8 @@ button:focus {
   @media (max-width: 991px) {
     #Apply .mentor-box {
       right: auto; } }
+      
+      
 
 #Sponsor, #Sponsor-info {
   /* Media Queries */ }
@@ -402,3 +418,9 @@ button:focus {
     margin-left: auto;
     position: relative;
     width: 400px; } }
+
+@media (min-width: 768px){
+  .navbar>.container .navbar-brand {
+    margin-left:0px;
+  }
+}

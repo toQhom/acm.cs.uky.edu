@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html>
-    <title>CatHacks VI</title>
+    <title>CatHacks Winter Edition</title>
     <head>
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="app/js/external/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -11,10 +11,11 @@
     </head>
 	<body>
 		<!-- MLH Honor Badge  and Code of Conduct-->
-		<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:1031" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+		<!--<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:1031" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>-->
 		<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">CatHacks</a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -38,7 +39,12 @@
                 <div class="row">
                     <div class="col-md-6">
                         <img class="logo" src="app/img/logo.svg" />
-                        <h2 style="text-align:center;"> Fall 2020 | Lexington, KY </h2>
+                        <!--<h2 style="text-align:center;"> December 11th - 13th, 2020 | Online </h2>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="text-align:center;">December 11th - 13th, 2020 | Online</h2>
                     </div>
                 </div>
                     <!-- <div class="col-md-6 home-btns"> <button href="https://briancarlson.typeform.com/to/EXiUyx" class="main-btn"> Apply </button>  <button href="#Sponsor" class="main-btn"> Sponsor </button> </div> -->
@@ -48,11 +54,11 @@
             <div class="container">
                 <div class="row">
                 <div class="about-box col-md-5">
-                    <h1>Episode VI: Return of the Hacker!</h1>
+                    <h1>CatHacks: Winter Edition!</h1>
                     <p>In April 2015, CatHacks was the first national college hackathon in the state of Kentucky. This year, we're back for round six. <br>
 
-                    On April 4th, 2020, hackers will travel from colleges across the nation to the University of Kentucky in Lexington.
-                    You'll have 24 hours to explore new technologies, meet talented students, and network with innovative tech companies. The food is on us, and so is the swag; CatHacks is completely free!</p>
+                    On December 11th - 13th, 2020, hackers will come together online from colleges across the nation and world to participate in CatHacks.
+                    You'll have 36 - 48 hours to explore new technologies, meet talented students, and network with innovative tech companies.</p>
                     <!--<p>Check-in starts at 10AM on March 30th. View the full schedule below.</p>-->
                     <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/schedule.pdf', '_self');"> Schedule </button>
                 </div>
@@ -67,17 +73,22 @@
         <section id="Apply" class="vertical-center">
             <div class="container">
                 <div class="row">
-                    <div class="text-box-parent col-md-6">
+                    <div class="text-box-parent col-md-5">
                         <div class="text-box">
-                            <h1> Eligibility and Travel </h1>
-                            <p>In order to attend CatHacks, you must be a student at a post-secondary university. We accept high school students on a case by case basis. Even if you don't have much experience, you should still apply! <br> We're offering travel reimbursement to as many participants as possible. Let us know if you need some help, and we'll do our best to get you here.</p>
-                            <button class="main-btn" onclick="window.open('https://my.mlh.io/oauth/authorize?client_id=72ca7ae99e6ba64c3e0049f7d33e2aa3d5b56ff11504f752adbe672b2a66503f&redirect_uri=http%3A%2F%2Fcathacks.cs.uky.edu%2Fapply%2Fthankyou.html&response_type=token', '_self');"> Sign-Up </button> <br>
-                            <p style="font-size:14px; font-weight:400;">By applying, you agree to the <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.</p>
+                            <h1> Eligibility</h1>
+                            <p>In order to attend CatHacks, you must be a student at a post-secondary university. We accept high school students on a case by case basis. Even if you don't have much experience, you should still apply!</p>
+                            <!--<button class="main-btn" onclick="window.open('https://my.mlh.io/oauth/authorize?client_id=72ca7ae99e6ba64c3e0049f7d33e2aa3d5b56ff11504f752adbe672b2a66503f&redirect_uri=http%3A%2F%2Fcathacks.cs.uky.edu%2Fapply%2Fthankyou.html&response_type=token', '_self');"> Sign-Up </button> <br>-->
+                            <button class="main-btn" type="button" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</button>
+                            <p style="font-size:14px; font-weight:400;">By signing up, you agree to the <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.</p>
                         </div>
                     </div>
-                    <div class="mentor-box col-md-4 offset-md-2">
-                        <h2> Hardware </h2>
-                        <p>MLH will be providing their <a href="https://hardware.mlh.io/">Hardware Lab</a>. This means that there will be tons of hardware to check out and use at the event! Arduinos, Oculus DK, Myo, Pebble, and Laptops are only a few of the items that will be available. (A vaild driver's license is required to rent hardware.)</p>
+                    <div class="col-md-5 col-md-offset-1" style="min-width: 200px;">
+                        <div id="collapseIframe" class="collapse">
+                            <h1> Sign Up </h1>
+                            <div class="iframe-container">
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfx435oRnIqnUCvY04rUND-AIYn-d-wZH-TAA_vI5sBaLMTsg/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer"> &copy; CatHacks 2020. CatHacks is a <a href="http://acm.cs.uky.edu">UK ACM</a>  and <a href="http://acm-w.cs.uky.edu">UK ACM-W</a> event. </div>
+            <div class="footer"> &copy; CatHacks 2020. CatHacks is a <a href="http://acm.cs.uky.edu">UKY ACM</a>  and <a href="http://acm-w.cs.uky.edu">UK ACM-W</a> event. </div>
         </section>
         <style>
             #alertModal {
@@ -142,9 +153,9 @@
         </script>
         <script>
             //Alert Modal
-            $(function(){        
+           /* $(function(){        
                 $("#alertModal").modal("show");
-            }); 
+            }); */
 
             //Nav element highlight
             $(function() {
@@ -160,9 +171,8 @@
         <!-- END Scripts -->
 
         <!-- Start Alert Modal -->
-        <div id="alertModal" class="modal fade" role="dialog">
+        <!--<div id="alertModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
-                <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -177,7 +187,7 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- End Alert Modal -->
     </body>
 </html>
