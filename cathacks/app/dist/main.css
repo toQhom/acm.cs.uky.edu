@@ -22,7 +22,7 @@ html, body {
   padding-top: 8px; }
 
 .navbar-nav > :first-child {
-  margin-left: 25px; }
+  margin-left: 35px; }
 
 .navbar-nav > li > a {
   color: #525252;
@@ -423,4 +423,8 @@ button:focus {
   .navbar>.container .navbar-brand {
     margin-left:0px;
   }
+}
+
+.navbar>.container .navbar-brand {
+  margin-left:15px;
 }
