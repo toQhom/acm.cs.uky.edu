@@ -12,6 +12,9 @@ html, body {
   color:#F5DE03;
   text-shadow: 2px 2px #F5DE03;
 }
+.yellow {
+  color:#F5DE03;
+}
 .yellow-border {
   color:#F5DE03;
   box-shadow: 5px 5px 5px #F5DE03;
