@@ -126,7 +126,7 @@ button:focus {
   /*.container {
         width: inherit;
     }*/ }
-  #Home .logo, #Thank-you .logo {
+ #Thank-you .logo {
     top: 50%;
     min-width: 668px; }
   #Home .home-btns, #Thank-you .home-btns {
