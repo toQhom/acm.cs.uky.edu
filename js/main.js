@@ -24,7 +24,7 @@ $("#mainMenu li:last-child").click(function(e) {
 	e.preventDefault();
 
 $('html, body').animate({
-        scrollTop: $('#team').offset().top - 100
+        scrollTop: $('#team').offset().top - 35
 }, 1000);
 
 });
