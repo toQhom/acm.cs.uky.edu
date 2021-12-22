@@ -37,15 +37,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="logo" src="img/cathacks8logo.png" />
+                        <img class="logo" src="img/cathacks8logo.png" alt = "retro cathacks logo"/>
                         <!--<h2 style="text-align:center;"> December 11th - 13th, 2020 | Online </h2>-->
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <!-- <h1 class="yellow"></h1> -->
-                        <h2 class="orange" background-color="#808080"><b>In-Person!</b></h2>
-                        <button class="main-btn bannerBtn" color="#000000"><a href="#Apply" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</a></button>
+                        <h1 class = "orange"></h1>
+                        <h2 class="orange"><b>In-Person!</b></h2><br>
+                        <div class = "bannerBtn">
+                            <button class="main-btnBannerBtn" type = "button"><a href="#Apply" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</a></button>
+                        </div>
                     </div>
                 </div>
                     <!-- <div class="col-md-6 home-btns"> <button href="https://briancarlson.typeform.com/to/EXiUyx" class="main-btn"> Apply </button>  <button href="#Sponsor" class="main-btn"> Sponsor </button> </div> -->
@@ -56,11 +59,11 @@
                 <div class="row">
                 <div class="about-box col-md-5">
                     <h1>CatHacks VIII!</h1>
-                    <p>In April 2015, CatHacks was the first national college hackathon in the state of Kentucky. This year, we're back for round seven. <br>
+                    <p>In April 2015, CatHacks was the first national college hackathon in the state of Kentucky. This year, we're back for round eight. <br>
 
                     In April 2022, hackers will come together online from colleges across the nation and world to participate in CatHacks.
                     You'll have 36 - 48 hours to explore new technologies, meet talented students, and network with innovative tech companies.</p>
-                    <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/cathacks-VII-schedule.pdf', '_self');"> Schedule </button>
+                    <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/cathacks-VII-schedule.pdf', '_blank');"> Schedule </button>
                 </div>
                 <!--
                 <div class="video-box-container">
@@ -101,7 +104,7 @@
                             <h1> Sponsor </h1>
                             <p>CatHacks would not be possible without the support of our sponsors. These companies allow us to keep CatHacks a free and open event for our participants, who value the opportunity to network with industry leaders.</p>
                             <p style="font-size:14px; font-weight:400;">Interested in sponsoring CatHacks VIII?</p>
-                            <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/cathacks-VIII-sponsor-packet.pdf', '_self');">Sponsorship Information</button> <br>
+                            <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/cathacks-VIII-sponsor-packet.pdf', '_blank');">Sponsorship Information</button> <br>
 							<!--<button class="main-btn" onclick="window.open('https://docs.google.com/presentation/d/1-ESxL4ety2-F0-2PThruNkH4ZGAUvxB7aNXTNNDLaOo/edit?usp=sharing', '_self');">Presentation</button><br>-->
 
                         </div>
@@ -122,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer"> &copy; CatHacks 2022. CatHacks is a <a href="http://acm.cs.uky.edu">UKY ACM</a>  and <a href="http://acm-w.cs.uky.edu">UK ACM-W</a> event. </div>
+            <div class="footer"> &copy; CatHacks 2022. CatHacks is a <a href="http://acm.cs.uky.edu" target = "_blank">UKY ACM</a>  and <a href="http://acm-w.cs.uky.edu" target = "_blank">UK ACM-W</a> event. </div>
         </section>
         <style>
             .logo {max-width: 425px!important;}
@@ -144,12 +147,12 @@
                 padding:0!important;
             }
             .bannerBtn:hover {
-                background-color: #222222!important;
+                background-color: transparent!important;
             }
             .bannerBtn a{
                 display:block;
                 width:100%;
-                line-height:65px;
+                line-height:61px;
             }
             @media (max-width: 991px){
                 .bannerBtn {

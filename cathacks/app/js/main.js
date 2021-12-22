@@ -17,3 +17,11 @@ $(function() {
     });
 		
 });
+
+$(".main-btnBannerBtn").click(function(e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $('#Apply').offset().top - 50
+    },600);
+});

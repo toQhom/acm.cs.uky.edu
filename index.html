@@ -34,18 +34,18 @@
 			<div id="overlay">
 				<div id="uklogo">
 					<a href="http://www.uky.edu" target="_blank"></a>
-					<img src="./uklogo.svg" >
+					<img src="./uklogo.svg" alt = "UK Logo">
 				</div>
 				<div id="header">
-					<img src="./uklogo2.svg" >
+					<img src="./uklogo2.svg" alt = "UK Logo and ACM Logo">
 				</div>
 				<ul id="mainMenu">
-					<li> <a href="./index.html">HOME</a></li>
-					<li><a href="http://acm.cs.uky.edu/cathacks">CATHACKS</a></li>
+					<li><a href="./index.html">HOME</a></li>
+					<li><a href="http://acm.cs.uky.edu/cathacks" target = "_blank">CATHACKS</a></li>
 					<li><a href="#contact">CONTACT</a></li>
 					<li><a href="#team">TEAM</a></li>
 				</ul>
-				<div class="container" id="container" >
+				<div class="container" id="container">
 					<div id="firstDiv">
 						<div class = "content">
 							<p id="firstP">
@@ -57,7 +57,7 @@
 							<div class="visible">
 								<ul id="headerCycle">
 									<li> <h1><a href="javascript:void(0);" id="involveHeader" onClick="sweepUp()">JOIN OUR MAILING LIST &gt </a> </h1> </li>
-									<li> <h1><a href="javascript:void(0);" id="involveHeader" onClick="sweepDown()">BACK &gt </a> </h1> </li>
+									<li> <h1><a href="javascript:void(0);" id="involveHeader2" onClick="sweepDown()">BACK &gt </a> </h1> </li>
 									</ul>
 								</div>
 								<h2 id="mobileMailingHeader" style="text-align:center; color:#fff; text-decoration:none;"> <a href="#"> JOIN OUR MAILING LIST </a> </h2>
@@ -107,14 +107,16 @@
 		</div> <!-- end main -->
 	</div> <!-- end main wrapper -->
 	<div id="mobilepage"></div>
-	<div class="container" id="contact" >
-		<div class = "content">
-			<h2 style="width: 250px; text-align: center;">CONTACT US</h2>
-			<p>Have questions or would like to sponsor us? We would love to hear from you.<br>
-			Email us at the address below or reach out to one of our officers!
-			</p>
-			<p class="emailAddress"><a href="mailto:uky.acm@gmail.com">uky.acm@gmail.com</a></p>
-		</div><!-- end contact content -->
+	<div id="contact">
+		<div class = "container">
+			<div class = "content">
+				<h2 style="width: 250px; text-align: center;">CONTACT US</h2>
+				<p>Have questions or would like to sponsor us? We would love to hear from you.<br>
+				Email us at the address below or reach out to one of our officers!
+				</p>
+				<p class="emailAddress"><a href="mailto:uky.acm@gmail.com">uky.acm@gmail.com</a></p>
+			</div><!-- end contact content -->
+		</div><!-- end contact container-->
 	</div><!-- end contact -->
 
 	<div id="team">
@@ -177,9 +179,34 @@
 			</div>
 		</div>
 	<footer>
-		Questions? Email us at uky.acm@gmail.com<br>
-		© University of Kentucky ACM 2020<br><br>
+		<div class = "footerContainer">
+			<div class = "footerText">
+				<h6>Questions? Email us at uky.acm@gmail.com</h6>
+				<h7>© University of Kentucky ACM 2022</h7>
+			</div>
+			<div class = "instagramContainer">
+				<a href = "https://www.instagram.com/ukyacm/?hl=en" target = "_blank">
+					<img src = "img/Social Media/white instagram logo.png" alt = "white instagram logo" class = "instagramLogo">
+				</a>
+			</div>
+			<div class = "twitterContainer">
+				<a href = "https://twitter.com/UKCatHacks" target = "_blank">
+					<img src = "img/Social Media/white twitter logo.png" alt = "white twitter logo" class = "twitterLogo">
+				</a>
+			</div>		
+			<div class = "discordContainer">
+				<a href = "https://discord.gg/Vk2MqG7" target = "_blank">
+					<img src = "img/Social Media/white discord logo.png" alt = "white discord logo" class = "discordLogo">
+				</a>
+			</div>	
+			<div class = "bbnvolvedContainer">
+				<a href = "https://discord.gg/Vk2MqG7" target = "_blank">
+					<img src = "img/Social Media/white BBNvolved logo.png" alt = "white BBNvolved logo" class = "bbnvolvedLogo">
+				</a>
+			</div>				
+		</div>
 	</footer>
+	<br><br>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="./js/jquery.backstretch.min.js"></script>
 	<script src="./js/particles.min.js"></script>

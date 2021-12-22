@@ -79,6 +79,24 @@ html, body {
   background-color: #000000;
   border-color: #ffffff; }
 
+.main-btnBannerBtn {
+  border: #fff solid 2px;
+  width: 160px;
+  height: 65px;
+  border-radius: 2px;
+  background: transparent;
+  transition: all .3s ease;
+  font-family: "Montserrat"; }
+
+.main-btnBannerBtn:hover {
+  background-color: #000000;
+  border-color: #ffffff; }
+
+.bannerBtn a:link, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
 section {
   min-height: 100%;
   width: 100%;

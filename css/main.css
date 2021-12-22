@@ -295,14 +295,6 @@ canvas {
   background: #888888; /* Gecko Browsers */
 }
 
-footer{
-	font-size:12px;
-	text-align:center;
-	color:#F0F0F0;
-	bottom:30px;
-	font-family:"Ancillary";
-}
-
 @-webkit-keyframes moveToTop {
 	from { }
 	to { -webkit-transform: translateY(-325px); }
@@ -544,6 +536,120 @@ h6 {
 	width:333px;
 
 
+}
+
+footer {
+	font-size:12px;
+	text-align:center;
+	color:#F0F0F0;
+	font-family:"Ancillary";
+	margin-top: -25px;
+	margin-bottom: -25px;
+}
+
+.footerContainer {
+	padding-bottom: -50px;
+	padding-top: -50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 325px;
+}
+
+.footerText {
+	margin-left: 200px;
+}
+
+.footerText h6 {
+	font-size: 12px;
+	text-align: center;
+	color: #F0F0F0;
+	font-family: "Ancillary";
+	margin-bottom: 7px;
+	padding-bottom: 0px;
+	line-height: 0px;
+	font-weight: normal;
+}
+
+.footerText h7 {
+	font-size: 12px;
+	text-align: center;
+	color: #F0F0F0;
+	font-family: "Ancillary";
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	line-height: 0px;
+	font-weight: normal;
+}
+
+.instagramContainer {
+	margin-top: 25px;
+	margin-left: 80px;
+	width: 35px;
+	height: 35px;
+}
+
+.instagramLogo {
+	width: 35px;
+	height: 35px;
+}
+
+.instagramLogo:hover {
+	opacity: 0.5;
+	transition: 0.9s ease;
+}
+
+.twitterContainer {
+	margin-top: 25px;
+	margin-left: 80px;
+	width: 35px;
+	height: 35px;
+}
+
+.twitterLogo {
+	width: 35px;
+	height: 35px;
+}
+
+.twitterLogo:hover {
+	opacity: 0.5;
+	transition: 0.9s ease;
+}
+
+.discordContainer {
+	margin-top: 25px;
+	margin-left: 80px;
+	width: 35px;
+	height: 35px;
+}
+
+.discordLogo {
+	width: 35px;
+	height: 35px;
+}
+
+.discordLogo:hover {
+	opacity: 0.5;
+	transition: 0.9s ease;
+}
+
+.bbnolvedContainer {
+	margin-top: 25px;
+	margin-left: 80px;
+	width: 35px;
+	height: 35px;
+}
+
+.bbnvolvedLogo {
+	width: 35px;
+	height: 35px;
+}
+
+.bbnvolvedLogo:hover {
+	opacity: 0.5;
+	transition: 0.9s ease;
 }
 
 @media (min-width: 751px) {

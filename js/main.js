@@ -11,6 +11,15 @@ $("#overlay").height()
 $('#main').backstretch("./background2.jpg",{});
 var scrollBottom = $(window).scrollTop() + $(window).height();
 
+$("#mainMenu li:nth-child(3)").click(function(e) {
+	e.preventDefault();
+
+$('html, body').animate({
+        scrollTop: $('#contact').offset().top - 50
+}, 1000);
+
+});
+
 $("#mainMenu li:last-child").click(function(e) {
 	e.preventDefault();
 
