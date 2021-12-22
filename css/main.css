@@ -637,14 +637,14 @@ footer {
 
 .bbnolvedContainer {
 	margin-top: 25px;
-	margin-left: 80px;
-	width: 35px;
+	margin-left: 75px;
 	height: 35px;
+	width: auto;
 }
 
 .bbnvolvedLogo {
-	width: 35px;
 	height: 35px;
+	width: auto;
 }
 
 .bbnvolvedLogo:hover {
