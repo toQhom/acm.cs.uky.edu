@@ -194,8 +194,8 @@ button:focus {
       min-width: 355px; } }
 
 #About .main-btn:hover {
-  background-color: #1D2430;
-  border-color: #1D2430; }
+  background-color: #000000;
+  border-color: #ffffff; }
 
 #About .about-box {
   font-family: "Open Sans";
@@ -293,6 +293,8 @@ button:focus {
     line-height: 4; }
   #Apply a {
     text-decoration: underline; }
+  #Apply a:hover {
+	color: #999999; }
   @media (max-width: 991px) {
     #Apply .mentor-box {
       right: auto; } }
@@ -329,8 +331,8 @@ button:focus {
   #Sponsor .main-btn, #Sponsor-info .main-btn {
     width: 230px; }
   #Sponsor .main-btn:hover, #Sponsor-info .main-btn:hover {
-    background-color: #1D2430;
-    border-color: #1D2430; }
+    background-color: #000000;
+    border-color: #ffffff; }
   @media (max-width: 991px) {
     #Sponsor .sp-container, #Sponsor-info .sp-container {
       right: auto;
