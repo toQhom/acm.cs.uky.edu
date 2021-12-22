@@ -76,8 +76,8 @@ html, body {
   font-family: "Montserrat"; }
 
 .main-btn:hover {
-  background-color: #22787B;
-  border-color: #22787B; }
+  background-color: #000000;
+  border-color: #ffffff; }
 
 section {
   min-height: 100%;
