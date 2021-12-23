@@ -15,7 +15,7 @@
 		<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">CatHacks</a>
+                    <a class="navbar-brand" href="index.html">CatHacks</a>				
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -26,9 +26,29 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li id="Homeli" class="active"><a href="#Home">Home <span class="sr-only">(current)</span></a></li>
-                        <li id="Aboutli" ><a href="#About">About</a></li>
-                        <li id="Applyli" ><a href="#Apply">Sign-Up</a></li>
-                        <li id="Sponsorli" ><a href="#Sponsor">Sponsor</a></li>
+                        <li id="Aboutli"><a href="#About">About</a></li>
+                        <li id="Applyli"><a href="#Apply">Sign-Up</a></li>
+                        <li id="Sponsorli"><a href="#Sponsor">Sponsor</a></li>
+						<li id="instagramContainer">
+							<a href = "https://www.instagram.com/ukyacm/?hl=en" target = "_blank">
+								<img src = "img/Social Media/grey instagram logo.png" alt = "grey instagram logo" class = "instagramLogo">
+							</a>
+						</li>
+						<li id="twitterContainer">
+							<a href = "https://twitter.com/UKCatHacks" target = "_blank">
+								<img src = "img/Social Media/grey twitter logo.png" alt = "grey twitter logo" class = "twitterLogo">
+							</a>
+						</li>						
+						<li id="discordContainer">
+							<a href = "https://discord.gg/Vk2MqG7" target = "_blank">
+								<img src = "img/Social Media/grey discord logo.png" alt = "grey discord logo" class = "discordLogo">
+							</a>
+						</li>						
+						<li id="bbnvolvedContainer">
+							<a href = "https://uky.campuslabs.com/engage/organization/association-for-computing-machinery" target = "_blank">
+								<img src = "img/Social Media/grey BBNvolved logo.png" alt = "grey BBnvolved logo" class = "bbnvolvedLogo">
+							</a>
+						</li>						
                     </ul>
                 </div>
             </div>
@@ -177,17 +197,34 @@
            /* $(function(){        
                 $("#alertModal").modal("show");
             }); */
-
-            //Nav element highlight
-            $(function() {
-                $("li").click(function() {
+			
+			//Nav element highlight
+			$(function() {
+				$("li:nth-child(1)").click(function() {
                     // remove classes from all
                     $("li").removeClass("active");
                     // add class to the one we clicked
-                    $(this).addClass("active");
+                    $("li:nth-child(1)").addClass("active");
                 });
-            });
-
+				$("li:nth-child(2)").click(function() {
+                    // remove classes from all
+                    $("li").removeClass("active");
+                    // add class to the one we clicked
+                    $("li:nth-child(2)").addClass("active");
+                });
+				$("li:nth-child(3)").click(function() {
+                    // remove classes from all
+                    $("li").removeClass("active");
+                    // add class to the one we clicked
+                    $("li:nth-child(3)").addClass("active");
+                });
+				$("li:nth-child(4)").click(function() {
+                    // remove classes from all
+                    $("li").removeClass("active");
+                    // add class to the one we clicked
+                    $("li:nth-child(4)").addClass("active");
+                });				
+			});
         </script>
 
         <!-- END Scripts -->

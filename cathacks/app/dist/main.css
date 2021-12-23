@@ -27,19 +27,88 @@ html, body {
 .show-me {
   display: block; }
 
-.navbar-nav > li {
-  margin-left: 50px; }
+.navbar-nav li#instagramContainer {
+	width: 35px;
+	height: 35px !important;
+    margin-top: -7px !important;
+	margin-left: 500px;
+	margin-bottom: 0px !important;	
+}
+
+.instagramLogo {
+	width: 35px;
+	height: 35px;
+}
+
+.instagramLogo:hover {
+	opacity: 0.5;
+	transition: 0.9s ease;
+}
+
+.navbar-nav li#twitterContainer {
+	width: 35px;
+	height: 35px !important;
+    margin-top: -7px !important;
+	margin-left: 50px;
+	margin-bottom: 0px !important;	
+}
+
+.twitterLogo {
+	width: 35px;
+	height: 35px;
+}
+
+.twitterLogo:hover {
+	opacity: 0.5;
+	transition: 0.9s ease;
+}
+
+.navbar-nav li#discordContainer {
+	width: 35px;
+	height: 35px !important;
+    margin-top: -7px !important;
+	margin-left: 50px;
+	margin-bottom: 0px !important;	
+}
+
+.discordLogo {
+	width: 35px;
+	height: 35px;
+}
+
+.discordLogo:hover {
+	opacity: 0.5;
+	transition: 0.9s ease;
+}
+
+.navbar-nav li#bbnvolvedContainer {
+	height: 35px !important;	
+	width: auto;
+    margin-top: -7px !important;
+	margin-left: 45px;
+	margin-bottom: 0px !important;	
+}
+
+.bbnvolvedLogo {
+	height: 35px !important;	
+	width: auto;
+}
+
+.bbnvolvedLogo:hover {
+	opacity: 0.5;
+	transition: 0.9s ease;
+}
+
+#Homeli, #Aboutli, #Applyli, #Sponsorli {
+	margin-left: 50px;
+}
 
 .navbar-nav > .active {
   padding-top: 8px; }
 
-.navbar-nav > :first-child {
-  margin-left: 35px; }
-
-.navbar-nav > li > a {
-  color: #525252;
-  line-height: 20px;
-  font-size: 12px; }
+#Homeli {
+	margin-left: 35px;
+}
 
 #navbar {
   display: block;
@@ -52,7 +121,7 @@ html, body {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-  color: #fff;
+  color: #fff !important;
   font-size: 12px;
   padding: 7px 15px;
   height: auto;
@@ -62,6 +131,12 @@ html, body {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
+
+#Homeli a, #Aboutli a, #Applyli a, #Sponsorli a {
+	color: #717171;
+	line-height: 20px;
+	font-size: 12px;
+}
 
 .row {
   margin: 0; }
