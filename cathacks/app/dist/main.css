@@ -874,6 +874,17 @@ button:focus {
 	}	
 }
 
+@media (max-width: 491px) {
+	.col-md-6 .logo {
+		margin-right: 0px;
+		margin-left: -14px;
+	}
+	.col-md-12 {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+}
+
 @media (max-width: 500px){
 	.navbar-nav li#instagramContainer {
 		margin-left: 145px;	
