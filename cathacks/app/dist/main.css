@@ -110,6 +110,26 @@ html, body {
 	transition: 0.9s ease;
 }
 
+.navbar-nav li#instagramContainer a {
+	width: 0px;
+	height: 0px;
+}
+
+.navbar-nav li#twitterContainer a {
+	width: 0px;
+	height: 0px;
+}
+
+.navbar-nav li#discordContainer a {
+	width: 0px;
+	height: 0px;
+}
+
+.navbar-nav li#bbnvolvedContainer a {
+	width: 0px;
+	height: 0px;
+}
+
 #Homeli, #Aboutli, #Applyli, #Sponsorli {
 	margin-left: 50px;
 }
@@ -269,6 +289,8 @@ button:focus {
   	-o-filter: brightness(40%);
   	-ms-filter: brightness(40%);
   	filter: brightness(40%);
+	/* Play around with these values to get a blue tint on the background image 
+	filter: sepia(30%) hue-rotate(180deg) saturate(400%); */
 }
 
 #Home, #Thank-you {
@@ -717,6 +739,15 @@ button:focus {
 	#Sponsorli {
 		margin-bottom: 120px;
 	}
+	#Aboutli a {
+		width: 68px;
+	}	
+	#Applyli a {
+		width: 80px;
+	}
+	#Sponsorli a {
+		width: 80px;
+	}
 	.navbar-nav li#instagramContainer {
 		margin-left: 655px;	
 		margin-top: -285px;
@@ -737,6 +768,22 @@ button:focus {
 		margin-top: -185px;
 		margin-bottom: 130px;
 	}	
+	.navbar-nav li#instagramContainer a {
+		width: 0px;
+		height: 0px;
+	}	
+	.navbar-nav li#twitterContainer a {
+		width: 0px;
+		height: 0px;
+	}	
+	.navbar-nav li#discordContainer a {
+		width: 0px;
+		height: 0px;
+	}	
+	.navbar-nav li#bbnvolvedContainer a {
+		width: 0px;
+		height: 0px;
+	}
 }
 
 @media (max-width: 950px){
