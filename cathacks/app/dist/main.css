@@ -8,7 +8,7 @@ html, body {
   	color: #fff; 
 }
 
-  html .container, body .container {
+html .container, body .container {
     padding: 0;
     width: auto; 
 }
@@ -177,10 +177,19 @@ html, body {
   	margin: 0; 
 }
 
+.col-md-6 {
+	width: 320px;
+	text-align: center;
+	overflow: hidden;
+}
+
 .col-md-6 .logo {
-	margin-right: 15px;
-	width: auto;
+	width: 440px; /*This changes the image size*/
 	height: auto;
+	padding-right: 15px; /*This changes how far left or right the image is*/
+	position: relative;
+	left: 100%;
+	margin-left: -200%;
 }
 
 .main-btn {
@@ -289,8 +298,8 @@ button:focus {
   	-o-filter: brightness(40%);
   	-ms-filter: brightness(40%);
   	filter: brightness(40%);
-	/* Play around with these values to get a blue tint on the background image 
-	filter: sepia(30%) hue-rotate(180deg) saturate(400%); */
+	/*Play around with these values to get a blue tint on the background image 
+	filter: sepia(30%) hue-rotate(180deg) saturate(400%);*/
 }
 
 #Home, #Thank-you {
@@ -329,11 +338,13 @@ button:focus {
     color: #969696; 
 }
 
+
 @media (max-width: 991px) {
     #Home .logo, #Thank-you .logo {
 		min-width: 355px; 
 	} 
 }
+
 
 #About .main-btn:hover {
   	background-color: #000000;
@@ -440,7 +451,7 @@ button:focus {
     right: -18%; 
 }
 
-  #Apply .text-box {
+#Apply .text-box {
     /*width:40%;*/
     /*position: absolute;
         top:50%;
@@ -554,6 +565,10 @@ button:focus {
   	.sp-box {
     	margin-top: 10px; 
 	} 
+	#Home h1 {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 }
 
 @media (max-width:480px){
@@ -672,67 +687,71 @@ button:focus {
 	} 
 }
 
-@media (max-width: 1500px){
+.navbar>.container .navbar-brand {
+  	margin-left:15px;
+}
+
+@media (max-width: 1500px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 500px;	
 	}
 }
 
-@media (max-width: 1450px){
+@media (max-width: 1450px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 450px;	
 	}
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 400px;	
 	}
 }
 
-@media (max-width: 1350px){
+@media (max-width: 1350px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 350px;	
 	}
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 300px;	
 	}
 }
 
-@media (max-width: 1250px){
+@media (max-width: 1250px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 250px;	
 	}
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 200px;	
 	}
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1150px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 150px;	
 	}
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 100px;	
 	}
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1050px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 50px;	
 	}
 }
 
-@media (max-width: 1001px){
+@media (max-width: 1001px) {
 	#Homeli, #Aboutli, #Applyli, #Sponsorli {
 		margin-left: 35px;
 	}
@@ -786,7 +805,7 @@ button:focus {
 	}
 }
 
-@media (max-width: 950px){
+@media (max-width: 950px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 600px;	
 	}
@@ -801,7 +820,7 @@ button:focus {
 	}	
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 550px;	
 	}
@@ -816,7 +835,7 @@ button:focus {
 	}	
 }
 
-@media (max-width: 850px){
+@media (max-width: 850px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 500px;	
 	}
@@ -831,7 +850,7 @@ button:focus {
 	}	
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 450px;	
 	}
@@ -846,7 +865,7 @@ button:focus {
 	}	
 }
 
-@media (max-width: 750px){
+@media (max-width: 750px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 400px;	
 	}
@@ -861,7 +880,7 @@ button:focus {
 	}	
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 350px;	
 	}
@@ -876,7 +895,7 @@ button:focus {
 	}	
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 300px;	
 	}
@@ -891,7 +910,7 @@ button:focus {
 	}	
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 250px;	
 	}
@@ -906,7 +925,7 @@ button:focus {
 	}	
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 200px;	
 	}
@@ -921,18 +940,7 @@ button:focus {
 	}	
 }
 
-@media (max-width: 491px) {
-	.col-md-6 .logo {
-		margin-right: 0px;
-		margin-left: -14px;
-	}
-	.col-md-12 {
-		margin-right: 0px;
-		margin-left: 0px;
-	}
-}
-
-@media (max-width: 500px){
+@media (max-width: 500px) {
 	.navbar-nav li#instagramContainer {
 		margin-left: 145px;	
 	}
@@ -947,12 +955,69 @@ button:focus {
 	}	
 }
 
-@media (min-width: 768px){
-  	.navbar>.container .navbar-brand {
-    	margin-left:0px;
-  	}
+@media (max-width: 450px) {
+	.navbar-nav li#instagramContainer {
+		margin-left: 145px;	
+	}
+	.navbar-nav li#twitterContainer {
+		margin-left: 205px;	
+	}
+	.navbar-nav li#discordContainer {
+		margin-left: 265px;	
+	}
+	.navbar-nav li#bbnvolvedContainer {
+		margin-left: 320px;	
+	}	
 }
 
-.navbar>.container .navbar-brand {
-  	margin-left:15px;
+@media (max-width: 400px) {
+	.navbar-nav li#instagramContainer {
+		margin-left: 145px;	
+	}
+	.navbar-nav li#twitterContainer {
+		margin-left: 205px;	
+	}
+	.navbar-nav li#discordContainer {
+		margin-left: 265px;	
+	}
+	.navbar-nav li#bbnvolvedContainer {
+		margin-left: 320px;	
+	}	
 }
+
+@media (max-width: 350px) {
+	.navbar-nav li#instagramContainer {
+		margin-left: 100px;	
+	}
+	.navbar-nav li#twitterContainer {
+		margin-left: 140px;	
+	}
+	.navbar-nav li#discordContainer {
+		margin-left: 180px;	
+	}
+	.navbar-nav li#bbnvolvedContainer {
+		margin-left: 215px;	
+	}	
+}
+
+@media (max-width: 319px) {
+	.navbar-nav li#instagramContainer {
+		margin-left: 100px;	
+	}
+	.navbar-nav li#twitterContainer {
+		margin-left: 140px;	
+	}
+	.navbar-nav li#discordContainer {
+		margin-left: 180px;	
+	}
+	.navbar-nav li#bbnvolvedContainer {
+		margin-left: 215px;	
+	}	
+}
+
+@media (max-height: 585px) {
+	.logo {
+		margin-top: 40px !important;
+	}
+}
+

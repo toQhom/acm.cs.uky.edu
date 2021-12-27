@@ -31,7 +31,7 @@ html, body {
     background-repeat: no-repeat;
 }
 
-.container a{
+.container a {
 	color: #fff;
 	text-decoration:none !important;
 	cursor: pointer;
@@ -46,7 +46,7 @@ strong {
 	text-decoration:underline;
 }
 
-p{
+p {
 	color:#fff;
 	line-height:2;
 	font-size:15px;
@@ -124,7 +124,7 @@ h5 {
 	color:#3b4f65;
 }
 
-#mobileMailingHeader{
+#mobileMailingHeader {
  	display:none;
 }
 
@@ -161,7 +161,7 @@ h5 {
 	z-index:100;
 }
 
-.container{
+.container {
 	width:700px;
 	z-index:10;
 	margin-left:auto;
@@ -210,7 +210,6 @@ h5 {
 #mainMenu li > a:before {
    	content: "";
   	position: absolute;
-  	width: 100%;
   	height: 2px;
   	left: 0;
   	background-color: #3c4e63;
@@ -219,7 +218,23 @@ h5 {
   	transform: scaleX(0);
   	-webkit-transition: all 0.3s ease-in-out 0s;
   	transition: all 0.3s ease-in-out 0s;
-    margin-top:39px;
+    margin-top:30px;
+}
+
+#mainMenu li:first-child > a:before {
+	width: 93%;
+}
+
+#mainMenu li:nth-child(2) > a:before {
+	width: 96%;
+}
+
+#mainMenu li:nth-child(3) > a:before {
+	width: 96%;
+}
+
+#mainMenu li:last-child > a:before {
+	width: 93%;
 }
 
 #mainMenu li > a:hover:before {
@@ -228,7 +243,7 @@ h5 {
   	transform: scaleX(1);
 }
 
-#uklogo{
+#uklogo {
 	margin-top:35px;
 	width:242px;
 	height:36px;
@@ -243,7 +258,7 @@ canvas {
   	vertical-align: bottom;
 }
 
-#header{
+#header {
 	width:239px;
 	height:44px;
 	margin-left:auto;
@@ -256,7 +271,7 @@ canvas {
     border-top: 1px solid #212326;
 }
 
-#teamContainer{
+#teamContainer {
 	width:750px;
 	margin-right:auto;
 	margin-left:auto;
@@ -332,8 +347,6 @@ content {
   	overflow:hidden;
   	height:80px;
 }
-
-
 
 #headerCycle li {
   	line-height:40px;
@@ -411,8 +424,7 @@ input {
     font-weight: 300;
 }
 
-
-textarea{
+textarea {
 	border: 1px solid #FFF;
 }
 
@@ -445,7 +457,7 @@ textarea{
   line-height:50px;
 }*/
 
-.button:hover{
+.button:hover {
   	color:#17181a;
   	background-color:#fff;
 }
@@ -469,6 +481,11 @@ input:focus {
 
 textarea:focus {
 	font-style:normal;
+}
+
+.contactUs {
+	width: 250px; 
+	text-align: center;
 }
 
 h4 {
@@ -708,37 +725,37 @@ footer {
 }
 
 @media (max-width: 1550px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 126%;
 	}
 }
 
 @media (max-width: 1450px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 126%;
 	}
 }
 
 @media (max-width: 1350px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 127%;
 	}
 }
 
 @media (max-width: 1250px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 127%;
 	}
 }
 
 @media (max-width: 1150px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 127%;
 	}
 }
 
 @media (max-width: 1050px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 127%;
 	}
 }
@@ -757,7 +774,7 @@ footer {
 }
 
 @media (max-width: 950px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 128%;
 	}
 	.footerText {
@@ -773,7 +790,7 @@ footer {
 }
 
 @media (max-width: 850px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 128%;
 	}
 	.footerText {
@@ -789,7 +806,7 @@ footer {
 }
 
 @media (max-width: 767px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 130%;
 	}
 	.footerText {
@@ -805,7 +822,7 @@ footer {
 }
 
 @media (max-width: 751px) {
-	#mainWrapper{
+	#mainWrapper {
 		min-height: 130%;
 	}
 	.footerText {
@@ -821,23 +838,21 @@ footer {
 }
 
 @media (min-width: 751px) {
-	#container{
+	#container {
 		height:380px;
 	}
 }
 
 @media (max-width: 750px) {
-	#overlay{
+	#overlay {
 		min-height:100% !important;
 	}
-	#main{
+	#main {
 		min-height:100% !important;
 	}
-	#mainWrapper{
+	#mainWrapper {
 		min-height:100% !important;
-	}
-	.container{
-		width:60%;
+		border:none;
 	}
 	.teamBox {
 		float:none;
@@ -849,6 +864,7 @@ footer {
 	}
 	#teamContainer {
 		width:250px;
+		border-top: 1px solid #212326;
 	}
 	#mazin {
 		width:250px;
@@ -862,29 +878,19 @@ footer {
 		padding-bottom:0px; 
 		height:0px;	
 	}
-	.container{
+	.container {
 		overflow:visible;
+		width:60%;
 	}
-    #mobileMailingHeader{
+    #mobileMailingHeader {
  		display:block;
 		pointer-events: none;
 	}
-	#firstP{
-	}
-	#mobilepage{
+	#mobilepage {
 		display:inline-block;
-
-	}
-	#mainWrapper {
-		border:none;
 	}
 	.visible {
 		display:none;
-	}
-
-	#teamContainer {
-		border-top: 1px solid #212326;
-
 	}
 	h2 {
 		margin-top:50px;
@@ -917,15 +923,63 @@ footer {
 	}
 }
 
+@media (max-width: 450px) {
+	#header {
+		width:230px;
+		padding-right:0px;
+	}
+	#mainMenu li > a:before {
+		margin-top: 20px;
+	}
+	#mainMenu li {
+		display: block;
+	}
+	#mainMenu li:first-child {
+		padding-left:11px;
+		margin-left:0px;
+		margin-right:0px;
+		padding-bottom:20px;
+	}
+	#mainMenu li:nth-child(2) {
+		margin-left:20px;
+		padding-bottom:20px;
+	}
+	#mainMenu li:nth-child(3) {
+		margin-left:20px;
+		padding-bottom:20px;
+	}
+	#mainMenu li:last-child {
+		margin-left:14px;		
+	}
+	.footerText {
+		margin-bottom: 150px;
+		margin-left: -250px;
+	}	
+	.instagramContainer {
+		margin-left: -225px;
+	}
+	.twitterContainer {
+		margin-left: 10px;
+	}
+	.discordContainer {
+		margin-left: 10px;
+	}
+	.bbnvolvedContainer {
+		margin-left: 8px;
+		margin-right: 67px;
+		padding-right: 0px;
+	}
+}
+
 @media (max-width: 400px) {
-	#overlay{
+	#overlay {
 		min-height:100% !important;
 	}
-	#main{
+	#main {
 		min-height:100% !important;
 	}
-	#mainWrapper{
-		min-height:100% !important;
+	#mainWrapper {
+		min-height:140% !important;
 	}
 	.container{
 		width:60%;
@@ -941,25 +995,76 @@ footer {
 	p {
 		font-size:14px;
 	}
-	#mainMenu li{
-		font-size:12px;
-	}
-	#mainMenu li:first-child{
-				padding-left:11px;
-
-	}
 	#mainMenu {
 		width:281px;
 		padding:10px;
-
 	}
-	#header{
-		width:230px;
-		padding-right:0px;
-
-	}
-	#mainMenu li{
+	#mainMenu li {
 		margin-left:0;
 		margin-right:0;
+		display: block;
+	}
+	#mainMenu li > a:before {
+		margin-top: 20px;
+	}
+	#mainMenu li:first-child {
+		padding-left:11px;
+		margin-left:0px;
+		margin-right:0px;
+		padding-bottom:20px;
+	}
+	#mainMenu li:nth-child(2) {
+		margin-left:10px;
+		padding-bottom:20px;
+	}
+	#mainMenu li:nth-child(3) {
+		margin-left:10px;
+		padding-bottom:20px;
+	}
+	#mainMenu li:last-child {
+		margin-left:13px;		
+	}
+}
+
+@media (max-width: 450px) and (max-height: 580px) {
+	#mainWrapper {
+		min-height:165% !important;
+	}
+}
+
+@media (max-width: 400px) and (max-height: 250px) {
+	#mainWrapper {
+		min-height:200% !important;
+	}
+}
+
+@media (max-width: 320px) and (max-height: 285px) {
+	#mainWrapper {
+		min-height:180% !important;
+	}
+}
+
+@media (max-width: 385px) {
+	.contactUs {
+		width: 200px;
+	}
+	.emailAddress a {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 319px) {
+	#mainWrapper{
+		min-height: 130%;
+	}
+	.footerText {
+		margin-bottom: 150px;
+		margin-left: -225px;
+	}
+	.instagramContainer {
+		margin-left: -250px;
+	}
+	.bbnvolvedContainer {
+		padding-right: 50px;
 	}
 }
