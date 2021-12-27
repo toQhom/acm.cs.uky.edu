@@ -933,6 +933,7 @@ footer {
 	}
 	#mainMenu li {
 		display: block;
+		font-size: 15px;
 	}
 	#mainMenu li:first-child {
 		padding-left:11px;
@@ -1041,6 +1042,36 @@ footer {
 @media (max-width: 320px) and (max-height: 285px) {
 	#mainWrapper {
 		min-height:180% !important;
+	}
+}
+
+@media (max-width: 320px) and (max-height: 220px) {
+	#mainWrapper {
+		min-height:200% !important;
+	}
+}
+
+@media (max-width: 320px) and (max-height: 200px) {
+	#mainWrapper {
+		min-height:220% !important;
+	}
+}
+
+@media (max-width: 320px) and (max-height: 150px) {
+	#mainWrapper {
+		min-height:300% !important;
+	}
+}
+
+@media (max-width: 320px) and (max-height: 100px) {
+	#mainWrapper {
+		min-height:450% !important;
+	}
+}
+
+@media (max-width: 320px) and (max-height: 50px) {
+	#mainWrapper {
+		min-height:600% !important;
 	}
 }
 

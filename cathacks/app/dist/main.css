@@ -177,13 +177,13 @@ html .container, body .container {
   	margin: 0; 
 }
 
-.col-md-6 {
+#Home .col-md-6 {
 	width: 320px;
 	text-align: center;
 	overflow: hidden;
 }
 
-.col-md-6 .logo {
+#Home .col-md-6 .logo {
 	width: 440px; /*This changes the image size*/
 	height: auto;
 	padding-right: 15px; /*This changes how far left or right the image is*/
@@ -957,31 +957,31 @@ button:focus {
 
 @media (max-width: 450px) {
 	.navbar-nav li#instagramContainer {
-		margin-left: 145px;	
+		margin-left: 115px;	
 	}
 	.navbar-nav li#twitterContainer {
-		margin-left: 205px;	
+		margin-left: 175px;	
 	}
 	.navbar-nav li#discordContainer {
-		margin-left: 265px;	
+		margin-left: 235px;	
 	}
 	.navbar-nav li#bbnvolvedContainer {
-		margin-left: 320px;	
+		margin-left: 290px;	
 	}	
 }
 
 @media (max-width: 400px) {
 	.navbar-nav li#instagramContainer {
-		margin-left: 145px;	
+		margin-left: 108px;	
 	}
 	.navbar-nav li#twitterContainer {
-		margin-left: 205px;	
+		margin-left: 153px;	
 	}
 	.navbar-nav li#discordContainer {
-		margin-left: 265px;	
+		margin-left: 198px;	
 	}
 	.navbar-nav li#bbnvolvedContainer {
-		margin-left: 320px;	
+		margin-left: 238px;	
 	}	
 }
 
