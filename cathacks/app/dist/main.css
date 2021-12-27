@@ -754,12 +754,17 @@ button:focus {
 @media (max-width: 1001px) {
 	#Homeli, #Aboutli, #Applyli, #Sponsorli {
 		margin-left: 35px;
+		display: block;
+		width: 80px;
 	}
 	#Sponsorli {
 		margin-bottom: 120px;
 	}
-	#Aboutli a {
+	#Homeli a {
 		width: 68px;
+	}
+	#Aboutli a {
+		width: 68px !important;
 	}	
 	#Applyli a {
 		width: 80px;

@@ -464,8 +464,9 @@ textarea {
 
 #uklogo a {
     position: absolute;
-    width: 100%;
+    width: 30%;
     height: 100%;
+	margin-left:85px;
     top: 0;
     left: 0;
     text-decoration: none;
@@ -656,6 +657,13 @@ footer {
 .bbnvolvedLogo:hover {
 	opacity: 0.5;
 	transition: 0.9s ease;
+}
+
+@media (min-height: 751px) {
+	#mainWrapper {
+		/*max-height: 100%;*/
+		/*margin-bottom: -10%;*/
+	}
 }
 
 @media (max-height: 750px) {
@@ -924,33 +932,42 @@ footer {
 }
 
 @media (max-width: 450px) {
+	#mainWrapper {
+		min-height:140% !important;
+	}
 	#header {
 		width:230px;
 		padding-right:0px;
 	}
-	#mainMenu li > a:before {
-		margin-top: 20px;
+	#mainMenu {
+		width:320px;
 	}
 	#mainMenu li {
 		display: block;
 		font-size: 15px;
+		margin-left:0;
+		margin-right:0;		
+		width:0px;
 	}
+	#mainMenu li > a:before {
+		margin-top: 20px;
+	}	
 	#mainMenu li:first-child {
-		padding-left:11px;
+		padding-left:133px;
 		margin-left:0px;
 		margin-right:0px;
 		padding-bottom:20px;
 	}
 	#mainMenu li:nth-child(2) {
-		margin-left:20px;
+		margin-left:104.5px;
 		padding-bottom:20px;
 	}
 	#mainMenu li:nth-child(3) {
-		margin-left:20px;
+		margin-left:112px;
 		padding-bottom:20px;
 	}
 	#mainMenu li:last-child {
-		margin-left:14px;		
+		margin-left:137px;		
 	}
 	.footerText {
 		margin-bottom: 150px;
@@ -973,14 +990,14 @@ footer {
 }
 
 @media (max-width: 400px) {
+	#mainWrapper {
+		min-height:150% !important;
+	}
 	#overlay {
 		min-height:100% !important;
 	}
 	#main {
 		min-height:100% !important;
-	}
-	#mainWrapper {
-		min-height:140% !important;
 	}
 	.container{
 		width:60%;
@@ -995,35 +1012,6 @@ footer {
 	}
 	p {
 		font-size:14px;
-	}
-	#mainMenu {
-		width:281px;
-		padding:10px;
-	}
-	#mainMenu li {
-		margin-left:0;
-		margin-right:0;
-		display: block;
-	}
-	#mainMenu li > a:before {
-		margin-top: 20px;
-	}
-	#mainMenu li:first-child {
-		padding-left:11px;
-		margin-left:0px;
-		margin-right:0px;
-		padding-bottom:20px;
-	}
-	#mainMenu li:nth-child(2) {
-		margin-left:10px;
-		padding-bottom:20px;
-	}
-	#mainMenu li:nth-child(3) {
-		margin-left:10px;
-		padding-bottom:20px;
-	}
-	#mainMenu li:last-child {
-		margin-left:13px;		
 	}
 }
 
@@ -1072,6 +1060,12 @@ footer {
 @media (max-width: 320px) and (max-height: 50px) {
 	#mainWrapper {
 		min-height:600% !important;
+	}
+}
+
+@media (max-width: 320px) {
+	#mainWrapper {
+		min-height:150% !important;
 	}
 }
 
