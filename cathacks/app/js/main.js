@@ -5,8 +5,7 @@ $(function() {
         } else {
             $('#navbar').css("display", "block"); // Always display navbar for now.
         }
-    });
-		
+    });	
 	
     $("#Homeli").click(function(e) {
 			e.preventDefault();
