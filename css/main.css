@@ -29,6 +29,7 @@ html, body {
 	position:relative;
 	background-size: 1280px 800px;
     background-repeat: no-repeat;
+	z-index: 1;
 }
 
 .container a {
@@ -132,12 +133,12 @@ h5 {
 	width:100%;
 	height:110%;
   	position: absolute;
-  	z-index:1;
+  	z-index:0;
 }
 
 #mainWrapper {
 	width:100%;
-	height:125%;
+	height:110%;
 	border-bottom: 1px solid #212326;
 }
 
@@ -151,7 +152,8 @@ h5 {
 	width:100%;
 	/*min-height:100%;*/
 	position:relative;
-	background-color:#17181a;
+	/*background-color:#17181a;*/
+	z-index:1;
 }
 
 #overlay {
@@ -269,6 +271,7 @@ canvas {
 
 #contact {
     border-top: 1px solid #212326;
+	z-index: 1;
 }
 
 #teamContainer {
@@ -552,6 +555,7 @@ footer {
 	font-family:"Ancillary";
 	margin-top: -25px;
 	margin-bottom: -25px;
+	z-index: 1;
 }
 
 .footerContainer {
@@ -561,10 +565,12 @@ footer {
 	align-items: center;
 	justify-content: center;
 	margin-left: 325px;
+	z-index: 1;
 }
 
 .footerText {
 	margin-left: 50px;
+	z-index: 1;
 }
 
 .footerText h6 {
@@ -596,6 +602,7 @@ footer {
 	margin-left: 80px;
 	width: 35px;
 	height: 35px;
+	z-index: 1;
 }
 
 .instagramLogo {
@@ -613,6 +620,7 @@ footer {
 	margin-left: 30px;
 	width: 35px;
 	height: 35px;
+	z-index: 1;
 }
 
 .twitterLogo {
@@ -630,6 +638,7 @@ footer {
 	margin-left: 30px;
 	width: 35px;
 	height: 35px;
+	z-index: 1;
 }
 
 .discordLogo {
@@ -647,6 +656,7 @@ footer {
 	margin-left: 25px;
 	height: 35px;
 	width: auto;
+	z-index: 1;
 }
 
 .bbnvolvedLogo {
@@ -659,112 +669,36 @@ footer {
 	transition: 0.9s ease;
 }
 
-@media (min-height: 751px) {
-	#mainWrapper {
-		/*max-height: 100%;*/
-		/*margin-bottom: -10%;*/
-	}
+#mainWrapper {
+	padding-bottom: 100px;
 }
 
-@media (max-height: 750px) {
-	#mainWrapper {
-		min-height: 125% !important;
+/*
+@media (min-width: 751px) {
+	#mc_embed_signup {
+		overflow: scroll;
 	}
 }
-
-@media (max-height: 711px) {
+*/
+/*
+@media (min-width: 751px) {
 	#mainWrapper {
-		min-height: 130% !important;
+		display: flex !important;
+		box-sizing: border-box !important;
+	}
+
+	#mc_embed_signup {
+		overflow-y: hidden !important;
+		max-height: inherit;
 	}
 }
+*/
 
-@media (max-height: 700px) {
-	#mainWrapper {
-		min-height: 138% !important;
-	}
-}
+/* Unrelated to responsive mainWrapper size */
 
-@media (max-height: 650px) {
-	#mainWrapper {
-		min-height: 148% !important;
-	}
-}
-
-@media (max-height: 550px) {
-	#mainWrapper {
-		min-height: 160% !important;
-	}
-}
-
-@media (max-height: 450px) {
-	#mainWrapper {
-		min-height: 175% !important;
-	}
-}
-
-@media (max-height: 350px) {
-	#mainWrapper {
-		min-height: 210% !important;
-	}
-}
-
-@media (max-height: 250px) {
-	#mainWrapper {
-		min-height: 275% !important;
-	}
-}
-
-@media (max-height: 150px) {
-	#mainWrapper {
-		min-height: 620% !important;
-	}
-}
-
-@media (max-height: 50px) {
-	#mainWrapper {
-		min-height: 770% !important;
-	}
-}
-
-@media (max-height: 620px) {
+@media (max-height: 630px) {
 	#mainWrapper {
     	border: none !important;
-	}
-}
-
-@media (max-width: 1550px) {
-	#mainWrapper {
-		min-height: 126%;
-	}
-}
-
-@media (max-width: 1450px) {
-	#mainWrapper {
-		min-height: 126%;
-	}
-}
-
-@media (max-width: 1350px) {
-	#mainWrapper {
-		min-height: 127%;
-	}
-}
-
-@media (max-width: 1250px) {
-	#mainWrapper {
-		min-height: 127%;
-	}
-}
-
-@media (max-width: 1150px) {
-	#mainWrapper {
-		min-height: 127%;
-	}
-}
-
-@media (max-width: 1050px) {
-	#mainWrapper {
-		min-height: 127%;
 	}
 }
 
@@ -782,9 +716,6 @@ footer {
 }
 
 @media (max-width: 950px) {
-	#mainWrapper {
-		min-height: 128%;
-	}
 	.footerText {
 		margin-bottom: 150px;
 		margin-left: -225px;
@@ -798,9 +729,6 @@ footer {
 }
 
 @media (max-width: 850px) {
-	#mainWrapper {
-		min-height: 128%;
-	}
 	.footerText {
 		margin-bottom: 150px;
 		margin-left: -225px;
@@ -814,9 +742,6 @@ footer {
 }
 
 @media (max-width: 767px) {
-	#mainWrapper {
-		min-height: 130%;
-	}
 	.footerText {
 		margin-bottom: 150px;
 		margin-left: -225px;
@@ -830,9 +755,6 @@ footer {
 }
 
 @media (max-width: 751px) {
-	#mainWrapper {
-		min-height: 130%;
-	}
 	.footerText {
 		margin-bottom: 150px;
 		margin-left: -225px;
@@ -857,9 +779,9 @@ footer {
 	}
 	#main {
 		min-height:100% !important;
+		z-index: 1;
 	}
 	#mainWrapper {
-		min-height:100% !important;
 		border:none;
 	}
 	.teamBox {
@@ -932,9 +854,6 @@ footer {
 }
 
 @media (max-width: 450px) {
-	#mainWrapper {
-		min-height:140% !important;
-	}
 	#header {
 		width:230px;
 		padding-right:0px;
@@ -956,15 +875,15 @@ footer {
 		padding-left:133px;
 		margin-left:0px;
 		margin-right:0px;
-		padding-bottom:20px;
+		padding-bottom:30px;
 	}
 	#mainMenu li:nth-child(2) {
 		margin-left:104.5px;
-		padding-bottom:20px;
+		padding-bottom:30px;
 	}
 	#mainMenu li:nth-child(3) {
 		margin-left:112px;
-		padding-bottom:20px;
+		padding-bottom:30px;
 	}
 	#mainMenu li:last-child {
 		margin-left:137px;		
@@ -990,9 +909,6 @@ footer {
 }
 
 @media (max-width: 400px) {
-	#mainWrapper {
-		min-height:150% !important;
-	}
 	#overlay {
 		min-height:100% !important;
 	}
@@ -1015,60 +931,6 @@ footer {
 	}
 }
 
-@media (max-width: 450px) and (max-height: 580px) {
-	#mainWrapper {
-		min-height:165% !important;
-	}
-}
-
-@media (max-width: 400px) and (max-height: 250px) {
-	#mainWrapper {
-		min-height:200% !important;
-	}
-}
-
-@media (max-width: 320px) and (max-height: 285px) {
-	#mainWrapper {
-		min-height:180% !important;
-	}
-}
-
-@media (max-width: 320px) and (max-height: 220px) {
-	#mainWrapper {
-		min-height:200% !important;
-	}
-}
-
-@media (max-width: 320px) and (max-height: 200px) {
-	#mainWrapper {
-		min-height:220% !important;
-	}
-}
-
-@media (max-width: 320px) and (max-height: 150px) {
-	#mainWrapper {
-		min-height:300% !important;
-	}
-}
-
-@media (max-width: 320px) and (max-height: 100px) {
-	#mainWrapper {
-		min-height:450% !important;
-	}
-}
-
-@media (max-width: 320px) and (max-height: 50px) {
-	#mainWrapper {
-		min-height:600% !important;
-	}
-}
-
-@media (max-width: 320px) {
-	#mainWrapper {
-		min-height:150% !important;
-	}
-}
-
 @media (max-width: 385px) {
 	.contactUs {
 		width: 200px;
@@ -1079,9 +941,6 @@ footer {
 }
 
 @media (max-width: 319px) {
-	#mainWrapper{
-		min-height: 130%;
-	}
 	.footerText {
 		margin-bottom: 150px;
 		margin-left: -225px;
@@ -1093,3 +952,237 @@ footer {
 		padding-right: 50px;
 	}
 }
+
+/* Related to responsive mainWrapper size */
+
+/*
+@media (min-width: 320px) and (min-width: 50px) {
+	#mainWrapper {
+		height: 100vh !important;
+	}
+}
+*/
+/*
+@media (max-height: 750px) {
+	#mainWrapper {
+		min-height: 125%;
+	}
+}
+
+@media (max-height: 711px) {
+	#mainWrapper {
+		min-height: 130%;
+	}
+}
+
+@media (max-height: 700px) {
+	#mainWrapper {
+		min-height: 138%;
+	}
+}
+
+@media (max-height: 650px) {
+	#mainWrapper {
+		min-height: 148%;
+	}
+}
+
+@media (max-height: 550px) {
+	#mainWrapper {
+		min-height: 160%;
+	}
+}
+
+@media (max-height: 450px) {
+	#mainWrapper {
+		min-height: 175%;
+	}
+}
+
+@media (max-height: 350px) {
+	#mainWrapper {
+		min-height: 210%;
+	}
+}
+
+@media (max-height: 250px) {
+	#mainWrapper {
+		min-height: 275%;
+	}
+}
+
+@media (max-height: 150px) {
+	#mainWrapper {
+		min-height: 620%;
+	}
+}
+
+@media (max-height: 50px) {
+	#mainWrapper {
+		min-height: 1070% !important;
+	}
+}
+
+@media (max-width: 1550px) {
+	#mainWrapper {
+		min-height: 126%;
+	}
+}
+
+@media (max-width: 1450px) {
+	#mainWrapper {
+		min-height: 126%;
+	}
+}
+
+@media (max-width: 1350px) {
+	#mainWrapper {
+		min-height: 127%;
+	}
+}
+
+@media (max-width: 1250px) {
+	#mainWrapper {
+		min-height: 127%;
+	}
+}
+
+@media (max-width: 1150px) {
+	#mainWrapper {
+		min-height: 127%;
+	}
+}
+
+@media (max-width: 1050px) {
+	#mainWrapper {
+		min-height: 127%;
+	}
+}
+
+@media (max-width: 950px) {
+	#mainWrapper {
+		min-height: 128%;
+	}
+}
+
+@media (max-width: 850px) {
+	#mainWrapper {
+		min-height: 128%;
+	}
+}
+
+@media (max-width: 767px) {
+	#mainWrapper {
+		min-height: 130%;
+	}
+}
+
+@media (max-width: 751px) {
+	#mainWrapper {
+		min-height: 130%;
+	}
+}
+
+@media (max-width: 750px) {
+	#mainWrapper {
+		min-height:100%;
+	}
+}
+
+@media (max-width: 450px) {
+	#mainWrapper {
+		min-height:165%;
+	}
+}
+
+@media (max-width: 450px) and (max-height: 580px) {
+	#mainWrapper {
+		min-height:180%;
+	}
+}
+
+@media (max-width: 400px) {
+	#mainWrapper {
+		min-height:165%;
+	}
+}
+
+@media (max-width: 400px) and (max-height: 250px) {
+	#mainWrapper {
+		min-height:215%;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 450px) {
+	#mainWrapper {
+		min-height:240% !important;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 400px) {
+	#mainWrapper {
+		min-height:220% !important;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 350px) {
+	#mainWrapper {
+		min-height:220% !important;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 300px) {
+	#mainWrapper {
+		min-height:215% !important;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 285px) {
+	#mainWrapper {
+		min-height:195% !important;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 220px) {
+	#mainWrapper {
+		min-height:215% !important;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 200px) {
+	#mainWrapper {
+		min-height:235% !important;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 150px) {
+	#mainWrapper {
+		min-height:315% !important;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 100px) {
+	#mainWrapper {
+		min-height:465% !important;
+	}
+}
+
+@media (max-width: 321px) and (max-height: 51px) {
+	#mainWrapper {
+		min-height:715% !important;
+	}
+}
+
+@media (max-width: 321px) {
+	#mainWrapper {
+		min-height:165%;
+	}
+}
+
+@media (max-width: 320px) {
+	#mainWrapper{
+		min-height: 145%;
+	}
+}
+
+/*

@@ -67,11 +67,13 @@
                         <h1 class = "orange"></h1>
                         <h2 class="orange"><b>In-Person!</b></h2><br>
                         <div class = "bannerBtn">
-                            <button class="main-btnBannerBtn" type = "button"><a href="#Apply" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</a></button>
+                            <button class="main-btnBannerBtn" type = "button">
+								<a href="#Apply" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</a>
+							</button>
                         </div>
                     </div>
                 </div>
-                    <!-- <div class="col-md-6 home-btns"> <button href="https://briancarlson.typeform.com/to/EXiUyx" class="main-btn"> Apply </button>  <button href="#Sponsor" class="main-btn"> Sponsor </button> </div> -->
+				<!-- <div class="col-md-6 home-btns"> <button href="https://briancarlson.typeform.com/to/EXiUyx" class="main-btn"> Apply </button> <button href="#Sponsor" class="main-btn"> Sponsor </button> </div> -->
             	<h2></h2> <!-- Needed for blank space below the Sign Up button -->
 			</div>
         </section>
@@ -90,7 +92,7 @@
                 <div class="video-box-container">
                     <div class="video-container"> <iframe width="560" height="315" src="https://www.youtube.com/embed/R7QlgWNJsLc" frameborder="0" allowfullscreen></iframe> </div>
                 </div>
-            -->
+                -->
                 </div>
 				<h2></h2> <!-- Needed for blank space below the Schedule button -->
             </div>
@@ -104,14 +106,16 @@
                             <p>In order to attend CatHacks, you must be a student at a post-secondary university. We accept high school students on a case by case basis. Even if you don't have much experience, you should still apply!</p>
                             <!--<button class="main-btn" onclick="window.open('https://my.mlh.io/oauth/authorize?client_id=72ca7ae99e6ba64c3e0049f7d33e2aa3d5b56ff11504f752adbe672b2a66503f&redirect_uri=http%3A%2F%2Fcathacks.cs.uky.edu%2Fapply%2Fthankyou.html&response_type=token', '_self');"> Sign-Up </button> <br>-->
                             <button class="main-btn" type="button" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</button>
-                            <p style="font-size:14px; font-weight:400;">By signing up, you agree to the <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.</p>
+                            <p style="font-size:14px; font-weight:400;">By signing up, you agree to the 
+								<a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.
+							</p>
                         </div>
                     </div>
                     <div class="col-md-5 col-md-offset-1" style="min-width: 200px;">
                         <div id="collapseIframe" class="collapse">
                             <h1> Sign Up </h1>
                             <div class="iframe-container">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3ZqFaRMjw59U0upaGbohgeY7VlIFFuzLIsK4V8kG5X-eEZw/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                <iframe src = "https://docs.google.com/forms/d/e/1FAIpQLSc3ZqFaRMjw59U0upaGbohgeY7VlIFFuzLIsK4V8kG5X-eEZw/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                             </div>
                         </div>
                     </div>
@@ -128,7 +132,6 @@
                             <p style="font-size:14px; font-weight:400;">Interested in sponsoring CatHacks VIII?</p>
                             <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/cathacks-VIII-sponsor-packet.pdf', '_blank');">Sponsorship Information</button> <br>
 							<!--<button class="main-btn" onclick="window.open('https://docs.google.com/presentation/d/1-ESxL4ety2-F0-2PThruNkH4ZGAUvxB7aNXTNNDLaOo/edit?usp=sharing', '_self');">Presentation</button><br>-->
-
                         </div>
                     </div>
                     <div class="sp-container col-md-5 offset-md-2">
@@ -147,8 +150,11 @@
                     </div>
                 </div>
             </div>
-            <div class="footer"> &copy; CatHacks 2022. CatHacks is a <a href="http://acm.cs.uky.edu" target = "_blank">UKY ACM</a>  and <a href="http://acm-w.cs.uky.edu" target = "_blank">UK ACM-W</a> event. </div>
+            <div class="footer"> 
+				&copy; CatHacks 2022. CatHacks is a <a href="http://acm.cs.uky.edu" target = "_blank">UKY ACM</a>  and <a href="http://acm-w.cs.uky.edu" target = "_blank">UK ACM-W</a> event. 
+			</div>
         </section>
+		
         <style>
             #alertModal {
                 margin-top:100px;
@@ -180,19 +186,21 @@
                     height:65px!important;
                 }
             }
-
         </style>
+		
         <!-- Scripts -->
         <script src="app/js/external/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="app/js/external/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="app/js/external/jquery.backstretch.min.js"></script>
         <script src="app/js/main.js"></script>
+		
         <script>
             $("#Home").backstretch("img/cathacks8background.png");
             $("#About").backstretch("app/img/aboutbg.png");
             $("#Apply").backstretch("app/img/newapplybg.png");
             $("#Sponsor").backstretch("app/img/sponsorbg.png");
         </script>
+		
         <script>
             //Alert Modal
            /* $(function(){        
