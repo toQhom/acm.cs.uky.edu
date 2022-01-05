@@ -27,6 +27,7 @@ body {
 h1, h2 {
   display: inline-block;
   background: #b8bdb2;
+  color: black;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -38,6 +39,11 @@ h2 {
   font-size: 20px;
   
 }
+
+br{
+    color: black;
+}
+
 span {
   background: #b8bdb2;
 
