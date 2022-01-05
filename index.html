@@ -3,11 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="The University of Kentucky Chapter of the ACM. Our organization seeks to create and foster a strong community for computing students at UK." />
+	
 	<title>UK ACM</title>
+	
 	<link rel="stylesheet" href="./css/animate.css">
 	<link rel="stylesheet" href="./css/main.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
@@ -22,30 +25,34 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
 	<link rel="manifest" href="./img/favicons/manifest.json">
+	
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="./img/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/d2090fb8da3cd4292151bb495/83451014bdf045fea19cf4067.js");</script>
+	
+	<script id="mcjs">
+		!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/d2090fb8da3cd4292151bb495/83451014bdf045fea19cf4067.js");
+	</script>
 </head>
 
 <body>
-	<div id="mainWrapper" >
+	<div id="mainWrapper">
 		<div id="main">
 			<div id="overlay">
 				<div id="uklogo">
 					<a href="http://www.uky.edu" target="_blank"></a>
-					<img src="./uklogo.svg" >
+					<img src="./uklogo.svg" alt = "UK Logo">
 				</div>
 				<div id="header">
-					<img src="./uklogo2.svg" >
+					<img src="./uklogo2.svg" alt = "UK Logo and ACM Logo">
 				</div>
 				<ul id="mainMenu">
-					<li> <a href="./index.html">HOME</a></li>
-					<li><a href="http://acm.cs.uky.edu/cathacks">CATHACKS</a></li>
+					<li><a href="./index.html">HOME</a></li>
+					<li><a href="http://acm.cs.uky.edu/cathacks" target = "_blank">CATHACKS</a></li>
 					<li><a href="#contact">CONTACT</a></li>
 					<li><a href="#team">TEAM</a></li>
 				</ul>
-				<div class="container" id="container" >
+				<div class="container" id="container">
 					<div id="firstDiv">
 						<div class = "content">
 							<p id="firstP">
@@ -56,50 +63,69 @@
 							</p>
 							<div class="visible">
 								<ul id="headerCycle">
-									<li> <h1><a href="javascript:void(0);" id="involveHeader" onClick="sweepUp()">JOIN OUR MAILING LIST ></h1> </a></li>
-									<li> <h1><a href="javascript:void(0);" id="involveHeader" onClick="sweepDown()">BACK ></h1> </a> </li>
-									</ul>
-								</div>
-								<h2 id="mobileMailingHeader" style="text-align:center; color:#fff; text-decoration:none;"> <a href="#"> JOIN OUR MAILING LIST </h2></a>
+									<li> 
+										<h1>
+											<a href="javascript:void(0);" id="involveHeader" onClick="sweepUp()">JOIN OUR MAILING LIST &gt </a> 
+										</h1> 
+									</li>
+									<li> 
+										<h1>
+											<a href="javascript:void(0);" id="involveHeader2" onClick="sweepDown()">BACK &gt </a> 
+										</h1> 
+									</li>
+								</ul>
+							</div>
+							<h2 id="mobileMailingHeader" style="text-align:center; color:#fff; text-decoration:none;"> 		<a href="#" class = "mailHeader"> JOIN OUR MAILING LIST </a> 
+							</h2>
 								
-								<br><br>
+							<br><br>
 								
-								<!-- Begin MailChimp Signup Form -->
-								<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-						<style type="text/css">
-							#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-							/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-							   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-						</style>
-						<div id="mc_embed_signup">
-						<form action="https://cathacks.us10.list-manage.com/subscribe/post?u=d2090fb8da3cd4292151bb495&amp;id=c3baf3f70d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						    <div id="mc_embed_signup_scroll">
-							<h2>Subscribe to our mailing list</h2>
-						<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-						<div class="mc-field-group">
-							<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-						</label>
-							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-						</div>
-						<div class="mc-field-group">
-							<label for="mce-FNAME">First Name </label>
-							<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-						</div>
-						<div class="mc-field-group">
-							<label for="mce-LNAME">Last Name </label>
-							<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-						</div>
-							<div id="mce-responses" class="clear">
-								<div class="response" id="mce-error-response" style="display:none"></div>
-								<div class="response" id="mce-success-response" style="display:none"></div>
-							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d2090fb8da3cd4292151bb495_c3baf3f70d" tabindex="-1" value=""></div>
-						    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-						    </div>
-						</form>
-						</div>
-						<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-						<!--End mc_embed_signup-->
+							<!-- Begin MailChimp Signup Form -->
+							<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+							<style type="text/css">
+								#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+								/* Add your own MailChimp form style overrides in your site stylesheet or in this style block. We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+							</style>
+							<div id="mc_embed_signup">
+								<form action="https://cathacks.us10.list-manage.com/subscribe/post?u=d2090fb8da3cd4292151bb495&amp;id=c3baf3f70d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    	<div id="mc_embed_signup_scroll">
+									<h2>Subscribe to our mailing list</h2>
+									<div class="indicates-required">
+										<span class="asterisk">*</span> indicates required
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-EMAIL">Email Address  
+											<span class="asterisk">*</span>
+										</label>
+										<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-FNAME">First Name </label>
+										<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-LNAME">Last Name </label>
+										<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+									</div>
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>    
+									<!-- real people should not fill this in and expect good things - do not 				 remove this or risk form bot signups -->
+						   		 	<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="b_d2090fb8da3cd4292151bb495_c3baf3f70d" tabindex="-1" value="">
+									</div>
+						    		<div class="clear">
+										<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+									</div>
+						    	</div>
+								</form>
+							</div>
+							<script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+							<script type="text/javascript">
+								(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+							</script>
+							<!--End mc_embed_signup-->
 						</div> <!-- end content -->
 					</div> <!-- end firstDiv -->
 				</div> <!-- end container -->
@@ -107,14 +133,16 @@
 		</div> <!-- end main -->
 	</div> <!-- end main wrapper -->
 	<div id="mobilepage"></div>
-	<div class="container" id="contact" >
-		<div class = "content">
-			<h2 style="width: 222px;">CONTACT US</h2>
-			<p>Have questions or would like to sponsor us? We would love to hear from you.<br>
-			Email us at the address below or reach out to one of our officers!
-			</p>
-			<p class="emailAddress"><a href="mailto:uky.acm@gmail.com">uky.acm@gmail.com</a></p>
-		</div><!-- end contact content -->
+	<div id="contact">
+		<div class = "container">
+			<div class = "content">
+				<h2 class = "contactUs">CONTACT US</h2>
+				<p>Have questions or would like to sponsor us? We would love to hear from you.<br>
+				Email us at the address below or reach out to one of our officers!
+				</p>
+				<p class="emailAddress"><a href="mailto:uky.acm@gmail.com">uky.acm@gmail.com</a></p>
+			</div><!-- end contact content -->
+		</div><!-- end contact container-->
 	</div><!-- end contact -->
 
 	<div id="team">
@@ -153,24 +181,56 @@
 					<h5>MATT MITCHELL</h5>
 					<h6><a href="mailto:matt.mitchell@uky.edu">matt.mitchell@uky.edu</a></h6>
 				</div>
-				<div class = "teamBox placeholder">
+			</div>
+			<div class = "row" >
+				<div class = "teamBox">
+					<h4>OUTREACH CHAIR</h4>
+					<h5>BEN WOOSLEY</h5>
+					<h6><a href="mailto:benwoosley@uky.edu">benwoosley@uky.edu</a></h6>
 				</div>
 				<div class = "teamBox">
 					<h4>FACULTY ADVISOR </h4>
 					<h5>DR. JUREK JAROMCZYK</h5>
+					<h6><a href="mailto:jurek@cs.uky.edu">jurek@cs.uky.edu</a></h6>
 				</div>
 				<div class = "teamBox placeholder">
 				</div>
-
-				<h6 style="width:10px; margin-left:auto; margin-right:auto;"> ... </h6>
-				<h5 id="mazin" style=" margin-left:auto; margin-right:auto; text-align:center;"> WEB DEVELOPMENT BY MAZIN ZAKARIA</h5>
 			</div>
+
+			<h6 id = "spacing"></h6>
+
+			<h5 id="mazin"><br> &#10 WEB DEVELOPMENT BY <br> MAZIN ZAKARIA</h5>
 		</div>
 	</div>
 	<footer>
-		Questions? Email us at uky.acm@gmail.com<br>
-		© University of Kentucky ACM 2020
+		<div class = "footerContainer">
+			<div class = "footerText">
+				<h6>Questions? Email us at uky.acm@gmail.com</h6>
+				<h7>© University of Kentucky ACM 2022</h7>
+			</div>
+			<div class = "instagramContainer">
+				<a href = "https://www.instagram.com/ukyacm/?hl=en" target = "_blank">
+					<img src = "img/Social Media/white instagram logo.png" alt = "white instagram logo" class = "instagramLogo">
+				</a>
+			</div>
+			<div class = "twitterContainer">
+				<a href = "https://twitter.com/UKCatHacks" target = "_blank">
+					<img src = "img/Social Media/white twitter logo.png" alt = "white twitter logo" class = "twitterLogo">
+				</a>
+			</div>		
+			<div class = "discordContainer">
+				<a href = "https://discord.gg/Vk2MqG7" target = "_blank">
+					<img src = "img/Social Media/white discord logo.png" alt = "white discord logo" class = "discordLogo">
+				</a>
+			</div>	
+			<div class = "bbnvolvedContainer">
+				<a href = "https://uky.campuslabs.com/engage/organization/association-for-computing-machinery" target = "_blank">
+					<img src = "img/Social Media/white BBNvolved logo.png" alt = "white BBNvolved logo" class = "bbnvolvedLogo">
+				</a>
+			</div>				
+		</div>
 	</footer>
+	<br><br>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="./js/jquery.backstretch.min.js"></script>
 	<script src="./js/particles.min.js"></script>

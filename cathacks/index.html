@@ -1,7 +1,6 @@
 <!doctype html>
-
 <html>
-    <title>CatHacks VII Online Hackathon</title>
+    <title>CatHacks VIII Online Hackathon</title>
     <head>
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="app/js/external/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -15,7 +14,7 @@
 		<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">CatHacks</a>
+                    <a class="navbar-brand" href="index.html">CatHacks</a>				
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -26,9 +25,29 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li id="Homeli" class="active"><a href="#Home">Home <span class="sr-only">(current)</span></a></li>
-                        <li id="Aboutli" ><a href="#About">About</a></li>
-                        <li id="Applyli" ><a href="#Apply">Sign-Up</a></li>
-                        <li id="Sponsorli" ><a href="#Sponsor">Sponsor</a></li>
+                        <li id="Aboutli"><a href="#About">About</a></li>
+                        <li id="Applyli"><a href="#Apply">Sign-Up</a></li>
+                        <li id="Sponsorli"><a href="#Sponsor">Sponsor</a></li>
+						<li id="instagramContainer">
+							<a href = "https://www.instagram.com/ukyacm/?hl=en" target = "_blank">
+								<img src = "img/Social Media/grey instagram logo.png" alt = "grey instagram logo" class = "instagramLogo">
+							</a>
+						</li>
+						<li id="twitterContainer">
+							<a href = "https://twitter.com/UKCatHacks" target = "_blank">
+								<img src = "img/Social Media/grey twitter logo.png" alt = "grey twitter logo" class = "twitterLogo">
+							</a>
+						</li>						
+						<li id="discordContainer">
+							<a href = "https://discord.gg/YauX9HkYF4" target = "_blank">
+								<img src = "img/Social Media/grey discord logo.png" alt = "grey discord logo" class = "discordLogo">
+							</a>
+						</li>						
+						<li id="bbnvolvedContainer">
+							<a href = "https://uky.campuslabs.com/engage/organization/association-for-computing-machinery" target = "_blank">
+								<img src = "img/Social Media/grey BBNvolved logo.png" alt = "grey BBnvolved logo" class = "bbnvolvedLogo">
+							</a>
+						</li>						
                     </ul>
                 </div>
             </div>
@@ -37,37 +56,44 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="logo" src="img/cyberpunk_logo.png" />
+                        <img class="logo" src="img/cathacks8logo.png" alt = "retro cathacks logo"/>
                         <!--<h2 style="text-align:center;"> December 11th - 13th, 2020 | Online </h2>-->
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1 class="yellow">CatHacks VIII</h1>
-                        <h2 class="yellow"><b>TBD:</b> April 2022 | In-Person!</h2>
-                        <button class="main-btn bannerBtn"><a href="#Apply" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</a></button>
+                        <!-- <h1 class="yellow"></h1> -->
+                        <h1 class = "orange"></h1>
+                        <h2 class="orange"><b>In-Person!</b></h2><br>
+                        <div class = "bannerBtn">
+                            <button class="main-btnBannerBtn" type = "button">
+								<a href="#Apply" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</a>
+							</button>
+                        </div>
                     </div>
                 </div>
-                    <!-- <div class="col-md-6 home-btns"> <button href="https://briancarlson.typeform.com/to/EXiUyx" class="main-btn"> Apply </button>  <button href="#Sponsor" class="main-btn"> Sponsor </button> </div> -->
-            </div>
+				<!-- <div class="col-md-6 home-btns"> <button href="https://briancarlson.typeform.com/to/EXiUyx" class="main-btn"> Apply </button> <button href="#Sponsor" class="main-btn"> Sponsor </button> </div> -->
+            	<h2></h2> <!-- Needed for blank space below the Sign Up button -->
+			</div>
         </section>
         <section id="About" class="vertical-center">
             <div class="container">
                 <div class="row">
                 <div class="about-box col-md-5">
-                    <h1>CatHacks VII!</h1>
-                    <p>In April 2015, CatHacks was the first national college hackathon in the state of Kentucky. This year, we're back for round seven. <br>
+                    <h1>CatHacks VIII!</h1>
+                    <p>In April 2015, CatHacks was the first national college hackathon in the state of Kentucky. This year, we're back for round eight. <br>
 
                     In April 2022, hackers will come together online from colleges across the nation and world to participate in CatHacks.
                     You'll have 36 - 48 hours to explore new technologies, meet talented students, and network with innovative tech companies.</p>
-                    <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/cathacks-VII-schedule.pdf', '_self');"> Schedule </button>
+                    <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/cathacks-VII-schedule.pdf', '_blank');"> Schedule </button>
                 </div>
                 <!--
                 <div class="video-box-container">
                     <div class="video-container"> <iframe width="560" height="315" src="https://www.youtube.com/embed/R7QlgWNJsLc" frameborder="0" allowfullscreen></iframe> </div>
                 </div>
-            -->
+                -->
                 </div>
+				<h2></h2> <!-- Needed for blank space below the Schedule button -->
             </div>
         </section>
         <section id="Apply" class="vertical-center">
@@ -79,14 +105,16 @@
                             <p>In order to attend CatHacks, you must be a student at a post-secondary university. We accept high school students on a case by case basis. Even if you don't have much experience, you should still apply!</p>
                             <!--<button class="main-btn" onclick="window.open('https://my.mlh.io/oauth/authorize?client_id=72ca7ae99e6ba64c3e0049f7d33e2aa3d5b56ff11504f752adbe672b2a66503f&redirect_uri=http%3A%2F%2Fcathacks.cs.uky.edu%2Fapply%2Fthankyou.html&response_type=token', '_self');"> Sign-Up </button> <br>-->
                             <button class="main-btn" type="button" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</button>
-                            <p style="font-size:14px; font-weight:400;">By signing up, you agree to the <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.</p>
+                            <p style="font-size:14px; font-weight:400;">By signing up, you agree to the 
+								<a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.
+							</p>
                         </div>
                     </div>
                     <div class="col-md-5 col-md-offset-1" style="min-width: 200px;">
                         <div id="collapseIframe" class="collapse">
                             <h1> Sign Up </h1>
                             <div class="iframe-container">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3ZqFaRMjw59U0upaGbohgeY7VlIFFuzLIsK4V8kG5X-eEZw/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                <iframe src = "https://docs.google.com/forms/d/e/1FAIpQLSc3ZqFaRMjw59U0upaGbohgeY7VlIFFuzLIsK4V8kG5X-eEZw/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                             </div>
                         </div>
                     </div>
@@ -100,10 +128,9 @@
                         <div class="text-box">
                             <h1> Sponsor </h1>
                             <p>CatHacks would not be possible without the support of our sponsors. These companies allow us to keep CatHacks a free and open event for our participants, who value the opportunity to network with industry leaders.</p>
-                            <p style="font-size:14px; font-weight:400;">Interested in sponsoring CatHacks VII?</p>
-                            <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/cathacks-VIII-sponsor-packet.pdf', '_self');">Sponsorship Information</button> <br>
+                            <p style="font-size:14px; font-weight:400;">Interested in sponsoring CatHacks VIII?</p>
+                            <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/Cathacks-VIII-sponsor-packet.pdf', '_blank');">Sponsorship Information</button> <br>
 							<!--<button class="main-btn" onclick="window.open('https://docs.google.com/presentation/d/1-ESxL4ety2-F0-2PThruNkH4ZGAUvxB7aNXTNNDLaOo/edit?usp=sharing', '_self');">Presentation</button><br>-->
-
                         </div>
                     </div>
                     <div class="sp-container col-md-5 offset-md-2">
@@ -122,10 +149,12 @@
                     </div>
                 </div>
             </div>
-            <div class="footer"> &copy; CatHacks 2021. CatHacks is a <a href="http://acm.cs.uky.edu">UKY ACM</a>  and <a href="http://acm-w.cs.uky.edu">UK ACM-W</a> event. </div>
+            <div class="footer"> 
+				&copy; CatHacks 2022. CatHacks is a <a href="http://acm.cs.uky.edu" target = "_blank">UKY ACM</a>  and <a href="http://acm-w.cs.uky.edu" target = "_blank">UK ACM-W</a> event. 
+			</div>
         </section>
+		
         <style>
-            .logo {max-width: 425px!important;}
             #alertModal {
                 margin-top:100px;
                 color: #000;
@@ -144,47 +173,66 @@
                 padding:0!important;
             }
             .bannerBtn:hover {
-                background-color: #222222!important;
+                background-color: transparent!important;
             }
             .bannerBtn a{
                 display:block;
                 width:100%;
-                line-height:65px;
+                line-height:61px;
             }
             @media (max-width: 991px){
                 .bannerBtn {
                     height:65px!important;
                 }
             }
-
         </style>
+		
         <!-- Scripts -->
         <script src="app/js/external/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="app/js/external/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="app/js/external/jquery.backstretch.min.js"></script>
         <script src="app/js/main.js"></script>
+		
         <script>
-            $("#Home").backstretch("img/brickbg.png");
+            $("#Home").backstretch("img/cathacks8background.png");
             $("#About").backstretch("app/img/aboutbg.png");
             $("#Apply").backstretch("app/img/newapplybg.png");
             $("#Sponsor").backstretch("app/img/sponsorbg.png");
         </script>
+		
         <script>
             //Alert Modal
            /* $(function(){        
                 $("#alertModal").modal("show");
             }); */
-
-            //Nav element highlight
-            $(function() {
-                $("li").click(function() {
+			
+			//Nav element highlight
+			$(function() {
+				$("li:nth-child(1)").click(function() {
                     // remove classes from all
                     $("li").removeClass("active");
                     // add class to the one we clicked
-                    $(this).addClass("active");
+                    $("li:nth-child(1)").addClass("active");
                 });
-            });
-
+				$("li:nth-child(2)").click(function() {
+                    // remove classes from all
+                    $("li").removeClass("active");
+                    // add class to the one we clicked
+                    $("li:nth-child(2)").addClass("active");
+                });
+				$("li:nth-child(3)").click(function() {
+                    // remove classes from all
+                    $("li").removeClass("active");
+                    // add class to the one we clicked
+                    $("li:nth-child(3)").addClass("active");
+                });
+				$("li:nth-child(4)").click(function() {
+                    // remove classes from all
+                    $("li").removeClass("active");
+                    // add class to the one we clicked
+                    $("li:nth-child(4)").addClass("active");
+                });				
+			});
         </script>
 
         <!-- END Scripts -->
