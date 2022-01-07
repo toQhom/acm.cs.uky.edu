@@ -1,9 +1,9 @@
 $(document).ready(function(){
-	resizeContainer();
+	resizeContainerRefresh();
 });
 
 $(window).resize(function() {
-	resizeContainer();
+	resizeContainerResize();
 });
 
 $('#main').backstretch("./background2.jpg",{});
@@ -46,13 +46,21 @@ function sweepDown() {
 	secondPageVisible = !secondPageVisible;
 }
 
-function resizeContainer() {
+function resizeContainerRefresh() {
 	if (window.innerWidth < 750) {
 		if (window.innerHeight >= 1309) {
-			$('#mainWrapper').css('height', 1350);
+			if (window.innerWidth <= 450) {
+				$('#mainWrapper').css('height', 2200);
+			}
+			else if (window.innerWidth < 550) {
+				$('#mainWrapper').css('height', 2000);
+			}
+			else if (window.innerWidth < 750) {
+				$('#mainWrapper').css('height', 1800);
+			}					
 		}
 		else if (255 + $("#container").height() > window.innerHeight) {
-			$('#mobilepage').css('height', $("#container").height()-window.innerHeight+470);
+			$('#mobilepage').css('height', $("#container").height()-window.innerHeight+300);
 			if (secondPageVisible) {
 				sweepDown();
 			}
@@ -61,8 +69,53 @@ function resizeContainer() {
 			$('#mainWrapper').css('height', 1350);
 		}
 	}
-	else if (window.innerWidth >= 750) {
-		$('#mainWrapper').css('height', 850);
+	else if (window.innerWidth == 750) {
+		if (!secondPageVisible) {
+			sweepDown();
+		}		
+		if (window.innerHeight >= 50) {
+			$('#mainWrapper').css('height', 1000);
+		}
+	}
+	else if (window.innerWidth > 750) {
+		$('#mainWrapper').css('height', 1000);
+		$('#overlay').css('height', 0); /*This line for some reason allows the particles to be interactable*/
+	}
+}
+
+function resizeContainerResize() {
+	if (window.innerWidth < 750) {
+		if (window.innerHeight >= 1309) {
+			if (window.innerWidth <= 450) {
+				$('#mainWrapper').css('height', 2200);
+			}
+			else if (window.innerWidth < 550) {
+				$('#mainWrapper').css('height', 2000);
+			}
+			else if (window.innerWidth < 750) {
+				$('#mainWrapper').css('height', 1800);
+			}			
+		}
+		else if (255 + $("#container").height() > window.innerHeight) {
+			$('#mobilepage').css('height', $("#container").height()-window.innerHeight+300);
+			if (secondPageVisible) {
+				sweepDown();
+			}
+		}
+		else {
+			$('#mainWrapper').css('height', 1350);
+		}
+	}
+	else if (window.innerWidth == 750) {
+		if (!secondPageVisible) {
+			sweepDown();
+		}		
+		if (window.innerHeight >= 50) {
+			$('#mainWrapper').css('height', 1000);
+		}
+	}
+	else if (window.innerWidth > 750) {
+		$('#mainWrapper').css('height', 1000);
 		$('#overlay').css('height', 0); /*This line for some reason allows the particles to be interactable*/
 	}
 }
