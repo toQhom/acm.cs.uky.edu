@@ -60,7 +60,7 @@ function resizeContainerRefresh() {
 			}					
 		}
 		else if (255 + $("#container").height() > window.innerHeight) {
-			$('#mobilepage').css('height', $("#container").height()-window.innerHeight+300);
+			$('#mobilepage').css('height', $("#container").height()-window.innerHeight+450);
 			if (secondPageVisible) {
 				sweepDown();
 			}
@@ -97,7 +97,7 @@ function resizeContainerResize() {
 			}			
 		}
 		else if (255 + $("#container").height() > window.innerHeight) {
-			$('#mobilepage').css('height', $("#container").height()-window.innerHeight+300);
+			$('#mobilepage').css('height', $("#container").height()-window.innerHeight+450);
 			if (secondPageVisible) {
 				sweepDown();
 			}

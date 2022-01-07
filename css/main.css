@@ -30,6 +30,7 @@ html, body {
 	background-size: 1280px 800px;
     background-repeat: no-repeat;
 	z-index: 1;
+	-webkit-text-size-adjust: 100%;
 }
 
 .container a {
