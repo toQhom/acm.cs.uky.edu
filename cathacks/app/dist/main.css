@@ -485,7 +485,7 @@ button:focus {
     min-width: 510px;
     min-height: 430px;
     background-color: #fff;
-	/*background:rgba(255,255,255,0.6);*/ /*This makes the background white and transparent*/
+	background:rgba(255,255,255,0.2); /*Makes background white and transparent, 0.2 in the last parameter looks best*/
     /*padding: 50px 70px 70px 70px; 
     padding:5px 20px;
     line-height: 44px;
