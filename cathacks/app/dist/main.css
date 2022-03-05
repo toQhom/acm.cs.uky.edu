@@ -753,6 +753,10 @@ button:focus {
 }
 
 @media (max-width: 1001px) {
+	#mlh-trust-badge {
+		top:100px !important;
+		right:0px !important;
+	}
 	#Homeli, #Aboutli, #Applyli, #Sponsorli {
 		margin-left: 35px;
 		display: block;
