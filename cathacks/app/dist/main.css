@@ -394,6 +394,20 @@ button:focus {
   	height: 315px; 
 }
 
+#About .extraInformation {
+	padding-top:10px;
+	font-size:14px;
+	font-weight:400;
+}
+
+#About .extraInformation a:link {
+	text-decoration: underline !important;
+}
+
+#About .extraInformation a:hover {
+	color: #999999;
+}
+
 @media (max-width: 991px) {
 	#About .video-box-container {
     	right: auto;
@@ -485,7 +499,12 @@ button:focus {
     min-width: 510px;
     min-height: 430px;
     background-color: #fff;
-	background:rgba(255,255,255,0.2); /*Makes background white and transparent, 0.2 in the last parameter looks best*/
+	
+	
+	/*Makes background white and transparent, 0.2 in the last parameter looks best*/
+	/*The last parameter originally had 0.2*/
+	background:rgba(255,255,255,0.6);
+	
     /*padding: 50px 70px 70px 70px; 
     padding:5px 20px;
     line-height: 44px;
