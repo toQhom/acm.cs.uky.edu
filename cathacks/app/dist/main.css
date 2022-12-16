@@ -297,8 +297,28 @@ button:focus {
   	-moz-filter: brightness(40%);
   	-o-filter: brightness(40%);
   	-ms-filter: brightness(40%);
-  	filter: brightness(40%);
-	/*Play around with these values to get a blue tint on the background image 
+  	filter: grayscale(100%) brightness(200%) opacity(30%);
+	/*If you want, play around with these values to get a blue tint on the background image 
+	filter: sepia(30%) hue-rotate(180deg) saturate(400%);*/
+}
+
+#About div.backstretch {
+  	-webkit-filter: brightness(60%);
+  	-moz-filter: brightness(60%);
+  	-o-filter: brightness(60%);
+  	-ms-filter: brightness(60%);
+	filter: grayscale(100%) brightness(60%) opacity(70%);
+	/*If you want, play around with these values to get a blue tint on the background image 
+	filter: sepia(30%) hue-rotate(180deg) saturate(400%);*/
+}
+
+#Apply div.backstretch {
+  	-webkit-filter: brightness(60%);
+  	-moz-filter: brightness(60%);
+  	-o-filter: brightness(60%);
+  	-ms-filter: brightness(60%);
+  	filter: grayscale(100%) brightness(60%) opacity(30%);
+	/*If you want, play around with these values to get a blue tint on the background image 
 	filter: sepia(30%) hue-rotate(180deg) saturate(400%);*/
 }
 
