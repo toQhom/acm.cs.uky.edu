@@ -184,9 +184,9 @@ html .container, body .container {
 }
 
 #Home .col-md-6 .logo {
-	width: 440px; /*This changes the image size*/
+	width: 340px; /*This changes the image size*/
 	height: auto;
-	padding-right: 15px; /*This changes how far left or right the image is*/
+	padding-right: auto; /*This changes how far left or right the image is*/
 	position: relative;
 	left: 100%;
 	margin-left: -200%;
@@ -297,8 +297,38 @@ button:focus {
   	-moz-filter: brightness(40%);
   	-o-filter: brightness(40%);
   	-ms-filter: brightness(40%);
-  	filter: brightness(40%);
-	/*Play around with these values to get a blue tint on the background image 
+  	filter: brightness(200%) opacity(30%);
+	/*If you want, play around with these values to get a blue tint on the background image 
+	filter: sepia(30%) hue-rotate(180deg) saturate(400%);*/
+}
+
+#About div.backstretch {
+  	-webkit-filter: brightness(60%);
+  	-moz-filter: brightness(60%);
+  	-o-filter: brightness(60%);
+  	-ms-filter: brightness(60%);
+	filter: brightness(60%) opacity(70%);
+	/*If you want, play around with these values to get a blue tint on the background image 
+	filter: sepia(30%) hue-rotate(180deg) saturate(400%);*/
+}
+
+#Apply div.backstretch {
+  	-webkit-filter: brightness(60%);
+  	-moz-filter: brightness(60%);
+  	-o-filter: brightness(60%);
+  	-ms-filter: brightness(60%);
+  	filter: brightness(60%) opacity(30%);
+	/*If you want, play around with these values to get a blue tint on the background image 
+	filter: sepia(30%) hue-rotate(180deg) saturate(400%);*/
+}
+
+#Sponsor div.backstretch {
+  	-webkit-filter: brightness(60%);
+  	-moz-filter: brightness(60%);
+  	-o-filter: brightness(60%);
+  	-ms-filter: brightness(60%);
+  	filter: brightness(60%) opacity(30%);
+	/*If you want, play around with these values to get a blue tint on the background image 
 	filter: sepia(30%) hue-rotate(180deg) saturate(400%);*/
 }
 
@@ -394,6 +424,20 @@ button:focus {
   	height: 315px; 
 }
 
+#About .extraInformation {
+	padding-top:10px;
+	font-size:14px;
+	font-weight:400;
+}
+
+#About .extraInformation a:link {
+	text-decoration: underline !important;
+}
+
+#About .extraInformation a:hover {
+	color: #999999;
+}
+
 @media (max-width: 991px) {
 	#About .video-box-container {
     	right: auto;
@@ -485,7 +529,13 @@ button:focus {
     min-width: 510px;
     min-height: 430px;
     background-color: #fff;
-    /*padding: 50px 70px 70px 70px;*/
+	
+	
+	/*Makes background white and transparent, 0.2 in the last parameter looks best*/
+	/*The last parameter originally had 0.2*/
+	background:rgba(255,255,255,0.6);
+	
+    /*padding: 50px 70px 70px 70px; 
     padding:5px 20px;
     line-height: 44px;
     font-weight: 200;
@@ -752,6 +802,10 @@ button:focus {
 }
 
 @media (max-width: 1001px) {
+	#mlh-trust-badge {
+		top:100px !important;
+		right:0px !important;
+	}
 	#Homeli, #Aboutli, #Applyli, #Sponsorli {
 		margin-left: 35px;
 		display: block;
